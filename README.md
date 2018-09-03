@@ -1,2 +1,2 @@
 # maternity-leave
-D3 visuals illustrating maternity leave in the companies, educational institutions, nonprofits, etc.
+D3 visuals illustrating maternity leave within companies, educational institutions, nonprofits, etc.
