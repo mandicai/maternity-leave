@@ -17,12 +17,31 @@ let lineSvg = d3.select('#maternity-line-chart')
   .append('svg')
   .attr('viewBox', -margin.left + ' ' +  -margin.top + ' ' + 800 + ' ' + 800)
 
-let g = lineSvg.append("g")
+let scale = lineSvg.append("g")
   .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
 
-g.append("g")
+scale.append("g")
     .attr("class", "axis axis--y")
     .call(d3.axisLeft(y))
+
+//GRID LINES
+function yGridlines () {
+  return d3.axisLeft(y)
+}
+
+let grid = lineSvg.append('g')
+  .attr('class', 'grid')
+  .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+  .call(yGridlines()
+    .tickSize(-width)
+    .tickFormat('')
+  )
+  .attr("color", "#cacbcc")
+
+scale.selectAll('.domain').remove()
+scale.selectAll('.tick line').remove()
+
+grid.selectAll('.domain').remove()
 
 function yCenter(value) {
   if (value < 10) {
@@ -46,7 +65,7 @@ d3.csv('maternity-data.csv').then(data => {
   // BUBBLE FORCE CREATION
   let simulation = d3.forceSimulation(data) // creates simulation
     .force('charge', d3.forceManyBody().strength(10)) // applies attraction or repelling force
-    .force('center', d3.forceCenter(widthLine / 1.5, heightLine  / 1.45)) // pulls points towards a center
+    .force('center', d3.forceCenter(widthLine / 1.5, heightLine  / 1.42)) // pulls points towards a center
     .force('collision', d3.forceCollide().radius(function (d) {
       return d.MaternityLeave
     }))
@@ -56,9 +75,9 @@ d3.csv('maternity-data.csv').then(data => {
     return yCenter(d.MaternityLeave)
   }).strength(0.5))
 
-  let bubbles = lineSvg.selectAll('.maternity-bubble')
+  let bubblesLine = lineSvg.selectAll('.maternity-bubble-line')
     .data(data)
-    .enter().append('g').attr('class', 'maternity-bubble')
+    .enter().append('g').attr('class', 'maternity-bubble-line')
     .append('circle')
       .attr('r', function (d) {
         return d.MaternityLeave
@@ -67,10 +86,10 @@ d3.csv('maternity-data.csv').then(data => {
         let index = industries.indexOf(d.Industry)
         return color(index)
       })
-      .style('stroke', 'black')
+      .style('stroke', '#cacbcc')
       .style('stroke-width', '0.3')
 
-  let labels = d3.selectAll('.maternity-bubble')
+  let labels = d3.selectAll('.maternity-bubble-line')
     .append('g')
 
   let texts = labels.append('text')
@@ -102,7 +121,7 @@ d3.csv('maternity-data.csv').then(data => {
     .style('font-size', '17px')
 
   function ticked () {
-    bubbles.attr('cx', function (d) {
+    bubblesLine.attr('cx', function (d) {
       return d.x
     })
     .attr('cy', function (d) {
@@ -123,7 +142,7 @@ d3.csv('maternity-data.csv').then(data => {
       return d.y
     })
 
-    bubbles.exit().remove()
+    bubblesLine.exit().remove()
     labels.exit().remove()
     numbers.exit().remove()
   }

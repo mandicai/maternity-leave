@@ -39,36 +39,36 @@ d3.csv('maternity-data.csv').then(data => {
         let index = industries.indexOf(d.Industry)
         return color(index)
       })
-      .style('stroke', 'black')
+      .style('stroke', '#cacbcc')
       .style('stroke-width', '0.3')
 
   let labels = d3.selectAll('.maternity-bubble')
     .append('g')
 
   let texts = labels.append('text')
-    .attr('x', function(d) {
+    .attr('x', function (d) {
       return d.x
     })
-    .attr('y', function(d) {
+    .attr('y', function (d) {
       return d.y
     })
     .attr('dy', -5)
-    .text(function(d) {
+    .text(function (d) {
       return d.Company
     })
-    .style('font-size', '10px')
+    .style('font-size', '7px')
     .style('text-anchor', 'middle')
 
   let numbers = labels.append('text')
-    .attr('x', function(d) {
+    .attr('x', function (d) {
       return d.x
     })
-    .attr('y', function(d) {
+    .attr('y', function (d) {
       return d.y
     })
     .attr('dy', 10)
     .style('text-anchor', 'middle')
-    .text(function(d) {
+    .text(function (d) {
       return d.MaternityLeave
     })
     .style('font-size', '17px')
