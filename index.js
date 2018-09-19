@@ -21,7 +21,7 @@ d3.csv('maternity-data.csv').then(data => {
 
   // BUBBLE FORCE CREATION
   let simulation = d3.forceSimulation(data) // creates simulation
-    .force('charge', d3.forceManyBody().strength(10)) // applies attraction or repelling force
+    .force('charge', d3.forceManyBody().strength(-0.5)) // applies attraction or repelling force
     .force('center', d3.forceCenter(width / 2, height / 2)) // pulls points towards a center
     .force('collision', d3.forceCollide().radius(function (d) {
       return d.MaternityLeave
@@ -41,23 +41,12 @@ d3.csv('maternity-data.csv').then(data => {
       })
       .style('stroke', '#cacbcc')
       .style('stroke-width', '0.3')
+      .attr('class', function(d) {
+        return d.Company
+      })
 
   let labels = d3.selectAll('.maternity-bubble')
     .append('g')
-
-  let texts = labels.append('text')
-    .attr('x', function (d) {
-      return d.x
-    })
-    .attr('y', function (d) {
-      return d.y
-    })
-    .attr('dy', -5)
-    .text(function (d) {
-      return d.Company
-    })
-    .style('font-size', '7px')
-    .style('text-anchor', 'middle')
 
   let numbers = labels.append('text')
     .attr('x', function (d) {
@@ -66,10 +55,12 @@ d3.csv('maternity-data.csv').then(data => {
     .attr('y', function (d) {
       return d.y
     })
-    .attr('dy', 10)
+    .attr('dy', 4)
     .style('text-anchor', 'middle')
     .text(function (d) {
-      return d.MaternityLeave
+      if (d.MaternityLeave != 0) {
+        return d.MaternityLeave
+      }
     })
     .style('font-size', '17px')
 
@@ -78,13 +69,6 @@ d3.csv('maternity-data.csv').then(data => {
       return d.x
     })
     .attr('cy', function (d) {
-      return d.y
-    })
-
-    texts.attr('x', function (d) {
-      return d.x
-    })
-    .attr('y', function (d) {
       return d.y
     })
 
@@ -99,4 +83,47 @@ d3.csv('maternity-data.csv').then(data => {
     labels.exit().remove()
     numbers.exit().remove()
   }
+
+  let g = svg.append('g')
+    .attr('transform', 'translate(' + 0 + ',' + 10 + ')')
+    
+  let companyName = g.append('text')
+    .style('font-size', '15px')
+    .style('font-family', 'Times New Roman')
+    .style('font-weight', 700)
+    .style('opacity', 0)
+  
+  let companyNumber = g.append('text')
+    .attr('dy', 20)
+    .attr('font-size', '12px')
+    .style('opacity', 0)
+
+  let companyIndustry = g.append('text')
+    .attr('dy', 40)
+    .attr('font-size', '12px')
+    .style('opacity', 0)
+
+  d3.selectAll('.maternity-bubble').on('mouseover', function (d) {
+    d3.select(this).transition().style('opacity', 0.5)
+    companyName.text(d.Company).transition().style('opacity', 1)
+    companyNumber.text('Maternity Leave: ' + d.MaternityLeave).transition().style('opacity', 1)
+    companyIndustry.text('Industry: ' + d.Industry).transition().style('opacity', 1)
+  })
+
+  d3.selectAll('.maternity-bubble').on('mouseout', function (d) {
+    d3.select(this).transition().style('opacity', 1)
+    companyName.transition().style('opacity', 0)
+    companyNumber.transition().style('opacity', 0)
+    companyIndustry.transition().style('opacity', 0)
+  })
+  // annotate netflix
+  d3.select('.Netflix').style('stroke', 'black').style('stroke-width', '1px')
 })
+
+window.onscroll = function() { scroll() }
+
+function scroll(){
+  console.log('hi')
+}
+
+

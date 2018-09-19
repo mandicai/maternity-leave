@@ -1,5 +1,44 @@
 body {
   font-family: "Inconsolata";
+  width: 100%;
+}
+
+h1 {
+  font-family: "Times New Roman";
+}
+
+p {
+  text-indent: 20px;
+  font-size: 15px;
+}
+
+#sections {
+  position: relative;
+  display: inline-block;
+  z-index: 90;
+  width: 50%;
+  top: 50px;
+}
+
+.step {
+  margin-bottom: 200px;
+}
+
+.content {
+  position: absolute;
+  left: 10%;
+  width: 50%;
+}
+
+#maternity-bubble-chart {
+  display: inline-block;
+  position: fixed;
+  height: 600px;
+  width: 600px;
+  z-index: 1;
+  margin: 5%;
+  border: 2px solid #F1F3F4;
+  border-radius: 100%;
 }
 
 .units {
@@ -7,8 +46,4 @@ body {
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   padding: 5px;
-}
-
-#maternity-bubble-chart {
-  border: 2px solid #cacbcc;
 }
