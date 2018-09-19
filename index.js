@@ -6,6 +6,7 @@
 // The function ticked controls how the circles and text change position during
 // the force simulation.
 
+// CHART SETUP
 let width = 600, height = 600
 
 let svg = d3.select('#maternity-bubble-chart')
@@ -16,6 +17,7 @@ let industries = ['Technology','Philanthropy','Hospitality','Government: Federal
 
 let color = d3.scaleSequential(d3.interpolatePuRd).domain([0, industries.length + 2])
 
+// CHART CREATION
 d3.csv('maternity-data.csv').then(data => {
   let nodes = data
 
@@ -116,25 +118,58 @@ d3.csv('maternity-data.csv').then(data => {
     companyNumber.transition().style('opacity', 0)
     companyIndustry.transition().style('opacity', 0)
   })
-  // annotate netflix
-  d3.select('.Netflix').style('stroke', 'black').style('stroke-width', '1px')
 })
+
+function activate(index) {
+  let lastIndex = -1
+  let activeIndex = 0
+
+  // SCROLL SETUP
+  let activateFunctions = []
+
+  function setupSections() {
+    activateFunctions[0] = function() { console.log('hi') }
+    activateFunctions[1] = annotate
+    activateFunctions[2] = function() { console.log('hi') }
+    activateFunctions[3] = function() { console.log('hi') }
+    activateFunctions[4] = function() { console.log('hi') }
+  }
+
+  setupSections()
+
+  activeIndex = index
+  let sign = (activeIndex - lastIndex) < 0 ? -1 : 1
+
+  let scrolledSections = d3.range(lastIndex + sign, activeIndex + sign, sign)
+
+  scrolledSections.forEach(function (i) {
+    activateFunctions[i]()
+  })
+
+  lastIndex = activeIndex
+}
+
+function annotate() {
+  // annotate netflix
+  d3.select('.Netflix').transition().style('stroke', 'black').style('stroke-width', '1px')
+  d3.select('.Bill').transition().style('stroke', 'black').style('stroke-width', '1px')
+}
 
 let scroll = scroller().container(d3.select('.content'))
 
 scroll(d3.selectAll('.step'))
 
- scroll.on('active', function (index) {
-   d3.selectAll('.step')
-     .transition()
-     .style('opacity', function (d, i) {
-       return i === index ? 1 : 0.1;
-     })
+scroll.on('active', function (index) {
+d3.selectAll('.step')
+  .transition()
+  .style('opacity', function (d, i) {
+    return i === index ? 1 : 0.1;
+  })
 
-  //  plot.activate(index);
- })
+activate(index)
+})
 
- scroll.on('progress', function (index, progress) {
-  //  plot.update(index, progress);
- })
+scroll.on('progress', function (index, progress) {
+//  plot.update(index, progress);
+})
 
