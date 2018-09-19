@@ -120,10 +120,21 @@ d3.csv('maternity-data.csv').then(data => {
   d3.select('.Netflix').style('stroke', 'black').style('stroke-width', '1px')
 })
 
-window.onscroll = function() { scroll() }
+let scroll = scroller().container(d3.select('.content'))
 
-function scroll(){
-  console.log('hi')
-}
+scroll(d3.selectAll('.step'))
 
+ scroll.on('active', function (index) {
+   d3.selectAll('.step')
+     .transition()
+     .style('opacity', function (d, i) {
+       return i === index ? 1 : 0.1;
+     })
+
+  //  plot.activate(index);
+ })
+
+ scroll.on('progress', function (index, progress) {
+  //  plot.update(index, progress);
+ })
 
