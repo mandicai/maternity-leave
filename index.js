@@ -7,7 +7,7 @@
 // the force simulation.
 
 // CHART SETUP
-let width = 600, height = 600
+let width = 700, height = 700
 
 let svg = d3.select('#maternity-bubble-chart')
   .append('svg')
@@ -15,6 +15,7 @@ let svg = d3.select('#maternity-bubble-chart')
 
 d3.csv('maternity-data.csv').then(data => {
  let industries = []
+
   data.forEach(datum => {
     if (!industries.includes(datum.Industry)) {
       industries.push(datum.Industry)
@@ -22,8 +23,6 @@ d3.csv('maternity-data.csv').then(data => {
   })
 
   let color = d3.scaleSequential(d3.interpolatePuRd).domain([0, industries.length + 2])
-  
-  let bubbleChart = chart(data, industries, color)
 
   let lastIndex = -1
   let activeIndex = 0
@@ -32,27 +31,36 @@ d3.csv('maternity-data.csv').then(data => {
   let activateFunctions = []
   let updateFunctions = []
 
+  // let bubbleChart = chart(data, industries, color)
+  // let countryBubblesVis = countryComparison()
+
   function setupSections() {
     activateFunctions[0] = function () {
-      if (d3.select('.annotation-group')) { // remove annotations // HCACK 
-        d3.select('.annotation-group').transition().style('opacity', 0).remove()
-      }
     }
-    activateFunctions[1] = chart.annotate
-    activateFunctions[2] = function() { 
-      if (d3.select('.annotation-group')) { // remove annotations // HCACK 
-        d3.select('.annotation-group').transition().style('opacity', 0).remove()
-      }
-      chart.showTechnology()
-    } // rearranges bubbles
-    activateFunctions[3] = function () {
+    activateFunctions[1] = function () {
+    }
+    activateFunctions[2] = function () {
       console.log('hi')
+      // if (d3.select('.annotation-group')) { // remove annotations // HACK 
+      //   d3.select('.annotation-group').transition().style('opacity', 0).remove()
+      // }
     }
-    activateFunctions[4] = function () {
+    activateFunctions[3] = function() { 
+      console.log('hi')
+      // bubbleChart.annotate() 
+    }
+    activateFunctions[4] = function() { 
+      console.log('hi')
+      // if (d3.select('.annotation-group')) { // remove annotations // HCACK 
+      //   d3.select('.annotation-group').transition().style('opacity', 0).remove()
+      // }
+      // bubbleChart.showTechnology()
+    } // rearranges bubbles
+    activateFunctions[5] = function () {
       console.log('hi')
     }
 
-    for (var i = 0; i < 5; i++) {
+    for (var i = 0; i < 6; i++) {
       updateFunctions[i] = function () {};
     }
   }
@@ -122,7 +130,7 @@ let chart = function chart(data, industries, color) {
     .style('stroke', '#cacbcc')
     .style('stroke-width', '0.3')
     .attr('class', function (d) {
-      return d.Company
+      return d.Company + ' maternity-circle'
     })
 
   bubbles.transition().duration(2000).attr('r', function (d) {
@@ -146,7 +154,7 @@ let chart = function chart(data, industries, color) {
         return d.MaternityLeave
       }
     })
-    .style('font-size', '17px')
+    .style('font-size', '15px')
 
   function ticked() {
     bubbles.attr('cx', function (d) {
@@ -170,6 +178,7 @@ let chart = function chart(data, industries, color) {
 
   let g = svg.append('g')
     .attr('transform', 'translate(' + 0 + ',' + 10 + ')')
+    .attr('class', 'description')
 
   let companyName = g.append('text')
     .style('font-size', '15px')
@@ -208,7 +217,8 @@ let chart = function chart(data, industries, color) {
       }
     })
 
-    let annotations = [{
+    let annotations = [
+      {
         note: {
           title: 'Netflix',
         },
@@ -254,105 +264,71 @@ let chart = function chart(data, industries, color) {
         return 'none'
       }
     })
-
-    // let margin = {
-    //   top: 50,
-    //   bottom: 50,
-    //   right: 50,
-    //   left: 50
-    // }
-
-    // let categories = ['>= 50', '>= 40', '>= 30', '>= 20', '>= 10']
-
-    // let y = d3.scalePoint()
-    //   .rangeRound([0, 500])
-    //   .domain(categories)
-
-    // let scale = svg.append("g")
-    //   .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
-
-    // scale.append("g")
-    //   .attr("class", "axis axis--y")
-    //   .call(d3.axisLeft(y))
-
-    // //GRID LINES
-    // function yGridlines() {
-    //   return d3.axisLeft(y)
-    // }
-
-    // let grid = svg.append('g')
-    //   .attr('class', 'grid')
-    //   .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
-    //   .call(yGridlines()
-    //     .tickSize(-500)
-    //     .tickFormat('')
-    //   )
-    //   .attr("color", "#cacbcc")
-
-    // scale.selectAll('.domain').remove()
-    // scale.selectAll('.tick line').remove()
-
-    // grid.selectAll('.domain').remove()
-
-    // function yCenter(value) {
-    //   if (value < 10) {
-    //     return 16.5 + y.step() * 5
-    //   } else if (value >= 10 && value < 20) {
-    //     return 16.5 + y.step() * 5
-    //   } else if (value >= 20 && value < 30) {
-    //     return 16.5 + y.step() * 4
-    //   } else if (value >= 30 && value < 40) {
-    //     return 16.5 + y.step() * 3
-    //   } else if (value >= 40 && value < 50) {
-    //     return 16.5 + y.step() * 2
-    //   } else if (value >= 50) {
-    //     return 16.5 + y.step()
-    //   }
-    // }
-
-    // simulation.force('y', d3.forceY().y(function(d) {
-    //   return yCenter(d.MaternityLeave)
-    // }).strength(0.5))
-
-    // simulation.force('center', d3.forceCenter(600 / 2, 600/ 1.5))
-
-    // simulation.alpha(0.5).restart()
-
-    // let gridCenters = {}
-    // let gridDimensions = {
-    //   "rows": 6,
-    //   "columns": 2
-    // }
-    // let groups = industries.length
-
-    // for (let i = 0; i < groups; i++) {
-    //   let curRow = Math.floor(i / gridDimensions.columns)
-    //   let curCol = i % gridDimensions.columns
-
-    //   let currentCenter = {
-    //     x: (2 * curCol + 1) * (width / (gridDimensions.columns * 2)),
-    //     y: (2 * curRow + 1) * (height / (gridDimensions.rows * 2))
-    //   }
-
-    //   gridCenters[industries[i]] = currentCenter
-    // }
-
-    // let targetForceX = d3.forceX(function (d) {
-    //   if (gridCenters[d.Industry]) {
-    //     return gridCenters[d.Industry].x * 1.5
-    //   } else {
-    //     return 0
-    //   }
-    // }).strength(0.5)
-    // let targetForceY = d3.forceY(function (d) {
-    //   if (gridCenters[d.Industry]) {
-    //     return gridCenters[d.Industry].y * 1.5
-    //   } else {
-    //     return 0
-    //   }
-    // }).strength(0.5)
-
-    // simulation.force('x', targetForceX).force('y', targetForceY)
   }
 }
 
+function countryComparison() {
+  let circleMargin = 75
+
+  let countryLeaves = [    
+    { country: 'Norway', maternityLeave: 35, note: '100% of normal pay' },
+    { country: 'Finland', maternityLeave: 23, note: '100% of normal pay' },
+    { country: 'Denmark', maternityLeave: 18, note: '100% of normal pay' },
+    { country: 'Belgium', maternityLeave: 15, note: '80% for 30 days after child birth, 75% for the rest' },
+    { country: 'US', maternityLeave: 1, note: 'Nothing' }
+  ]
+
+  let color = d3.scaleSequential(d3.interpolatePuBu).domain([0, countryLeaves.length])
+
+  let g = svg.append('g')
+    .attr('transform', 'translate(' + circleMargin + ',' + height / 2 + ')')
+    .attr('class', 'country-bubble-group')
+  
+  let countryBubbles = g.selectAll('.country-bubble')
+    .data(countryLeaves)
+    .enter().append('circle')
+    .attr('r', function(d) {
+      return 0
+    })
+    .attr('cx', function(d, i) {
+      return width / countryLeaves.length * i
+    })
+    .attr('fill', function(d, i) {
+      return color(i)
+    })
+    .style('stroke', '#cacbcc')
+    .style('stroke-width', '0.3')
+    .attr('class', 'country-bubble')
+  
+  countryBubbles.transition().duration(1000).attr('r', function(d) {
+    return d.maternityLeave
+  })
+
+  let annotations = countryLeaves.map((country, index) => {
+    return {
+      note: {
+        title: country.country,
+        label: country.note,
+      },
+      subject: {
+        radius: country.maternityLeave,
+      },
+      type: d3.annotationCalloutCircle,
+      x: circleMargin + width / countryLeaves.length * index,
+      y: height / 2,
+      dy: -150,
+      dx: 0,
+    }
+  })
+
+  let makeAnnotations = d3.annotation()
+    .type(d3.annotationLabel)
+    .annotations(annotations)
+
+  let countryAnnotationGroup = svg.append('g')
+    .attr('class', 'annotation-group')
+    .attr('opacity', 0)
+    .call(makeAnnotations)
+
+  countryAnnotationGroup.transition().duration(750).attr('opacity', 1)
+}

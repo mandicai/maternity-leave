@@ -9,7 +9,7 @@ Victoria University,36,36,Educational Services
 Simon Fraser University,35,18,Educational Services
 Queen's University,35,15,Educational Services
 University of Saskatchewan,35,35,Educational Services
-"Automattic, Inc.",32,N/A,
+"Automattic, Inc.",32,N/A,Technology
 University of California Berkeley,32,16,Educational Services
 McGill University,31,12,Educational Services
 Dalhousie University,31,31,Educational Services
@@ -58,3 +58,61 @@ Credit Suisse,12,1,Finance
 Dow Jones,12,7,Media
 IBM,12,12,Technology
 Shearman & Sterling LLP,20,8,Law
+Standard Charted,16,10,Finance
+The Estee Lauder Companies Inc.,12,20,Cosmetics
+Twitter,20,20,Technology
+Winston & Strawn LLP,20,20,Law
+Concordia University Chicago,20,N/A,Educational Services
+Yammer,20,N/A,Technology
+Stonyfield Farm,20,N/A,Consumer Goods
+"University of California, Santa Cruz",13,10,Educational Services
+"University of California, Santa Barbara",20,10,Educational Services
+Atlassian,20,N/A,Technology
+New Mexico State University,20,20,Educational Services
+Enigma,20,10,Technology
+VMware,8,18,Technology
+Mailchimp,18,10,Technology
+Korn Ferry,18,N/A,Services: Staffing
+Foley Hoag,18,18,Law
+Squarespace,18,18,Technology
+Bloomberg,17,4,Media
+WilmerHale,18,N/A,Law
+CA Technologies,15,12,Technology
+Wilson Sonsini Goodrich & Rosati,18,N/A,Law
+Akin Gump Strauss Hauer & Feld LLP,18,N/A,Law
+Allen & Over,15,N/A,Law
+Apple,18,6,Technology
+Arnold & Porter LLP,18,6,Law
+Baker & McKenzie,18,N/A,Law
+Bracewell & Guiliani LLP,18,N/A,Law
+Brown Rudnick LLP,18,N/A,Law
+"Cadwalader, Wickersham & Taft LLP",18,N/A,Law
+Cahill Gordon & Reindel LLP,18,N/A,Law
+Capital One Financial Corporation,12,9,Finance
+Chadbourne & Parke LLP,18,N/A,Law
+Cleary Gottlieb Steen & Hamilton LLP,18,N/A,Law
+Clifford Chance LLP,18,4,Law
+Cooley LLP,13,10,Law
+Covington & Burling LLP,18,6,Law
+"Cravath, Swaine & Moore LLP",18,4,Law
+Crowell & Moring,18,N/A,Law
+Davis Polk & Wardwell LLP,18,N/A,Law
+Foley & Lardner LLP,18,N/A,Law
+"Fried, Frank, Harris, Shriver & Jacobson LLP",18,9,Law
+Goodwin Procter LLP,18,4,Law
+Hogan Lovells,18,N/A,Law
+Jenner & Brock,18,N/A,Law
+Jones Day,18,N/A,Law
+Kirkland & Ellis LLP,16,N/A,Law
+Linklaters LLP,29,N/A,Law
+Mayer Brown,18,N/A,Law
+Paul Weiss,18,N/A,Law
+Perkins Coie,12,N/A,Law
+Pillsbury Winthrop Shaw Pittman LLP,18,12,Law
+Sidley Austin LLP,18,4,Law
+Squire Patton Boggs,18,N/A,Law
+Starbucks Corporation,6,6,Services: Food and Hospitality
+Sullivan & Cromwell LLP,18,N/A,Law
+Yum! Brands,18,6,Services: Food and Hospitality
+Paul Hastings,18,N/A,Law
+GitHub,18,20,Technology

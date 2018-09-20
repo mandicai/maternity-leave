@@ -54,6 +54,11 @@ p {
   fill: none;
 }
 
-.annotation text {
+.annotation-note-title {
   fill: black;
+}
+
+.annotation-note-label {
+  fill: #ccc;
+  font-size: 12px;
 }
