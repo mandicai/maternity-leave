@@ -34,7 +34,7 @@ function scroller() {
         })
         containerStart = container.node().getBoundingClientRect().top + window.pageYOffset
     }
-
+    // position is called whenever we scroll
     function position() {
         let pos = window.pageYOffset - 10 - containerStart
         let sectionIndex = d3.bisect(sectionPositions, pos)

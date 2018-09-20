@@ -48,3 +48,12 @@ p {
   border-bottom: 1px solid black;
   padding: 5px;
 }
+
+.annotation path {
+  stroke: black;
+  fill: none;
+}
+
+.annotation text {
+  fill: black;
+}
