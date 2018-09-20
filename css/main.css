@@ -1,11 +1,24 @@
 body {
-  font-family: "Inconsolata";
+  font-family: "Muli", sans-serif;
+  font-weight: 100;
   width: 100%;
-  height: 1900px;
+  height: 2500px;
+}
+
+h1, h3 {
+  font-family: 'Noto Serif JP', sans-serif;
+  font-weight: 900;
 }
 
 h1 {
-  font-family: "Times New Roman";
+  font-size: 40px;
+}
+
+.units {
+  font-size: 15px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 5px;
 }
 
 p {
@@ -17,7 +30,7 @@ p {
   position: relative;
   display: inline-block;
   z-index: 90;
-  width: 50%;
+  width: 65%;
   top: 50px;
 }
 
@@ -42,11 +55,28 @@ p {
   border-radius: 100%;
 }
 
-.units {
+.maternity-circle {
+  stroke: #cacbcc;
+  stroke-width: 0.3;
+}
+
+.numbers-text {
   font-size: 15px;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  padding: 5px;
+  text-anchor: middle;
+}
+
+.company-name {
+  font-size: 15px;
+  font-family: 'Noto Serif JP', sans-serif;
+  font-weight: 900;
+}
+
+.company-number {
+  font-size: 12px;
+}
+
+.company-industry {
+  font-size: 12px;
 }
 
 .annotation path {
@@ -59,6 +89,19 @@ p {
 }
 
 .annotation-note-label {
-  fill: #ccc;
+  fill: #8b8b8c;
   font-size: 12px;
+}
+
+.average-group .average {
+  font-size: 100px;
+  font-family: 'Noto Serif JP', sans-serif;
+  font-weight: 900;
+  text-anchor: middle;
+}
+
+.average-group .subtext {
+  font-size: 20px;
+  color: #ccc;
+  text-anchor: middle;
 }

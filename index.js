@@ -22,7 +22,7 @@ d3.csv('maternity-data.csv').then(data => {
     }
   })
 
-  let color = d3.scaleSequential(d3.interpolatePuRd).domain([0, industries.length + 2])
+  let color = d3.scaleSequential(d3.interpolateBuPu).domain([0, industries.length + 2])
 
   let lastIndex = -1
   let activeIndex = 0
@@ -31,37 +31,67 @@ d3.csv('maternity-data.csv').then(data => {
   let activateFunctions = []
   let updateFunctions = []
 
-  // let bubbleChart = chart(data, industries, color)
-  // let countryBubblesVis = countryComparison()
+  chart(data, industries, color)
+  countryComparison()
+  annotate()
+  showAvg(data)
 
   function setupSections() {
     activateFunctions[0] = function () {
+      d3.select('.average-group').attr('display', 'none')
+      d3.select('.maternity-annotation-group').attr('display', 'none')
+      d3.selectAll('.maternity-bubble').attr('display', 'initial')
+      d3.selectAll('.maternity-circle').attr('r', 0)
+      d3.selectAll('.maternity-circle').transition().duration(750).attr('r', function(d) {
+        return d.MaternityLeave
+      })
+      d3.select('.country-bubble-group').attr('display', 'none')
+      d3.select('.country-annotation-group').attr('display', 'none')
     }
     activateFunctions[1] = function () {
+      d3.selectAll('.maternity-bubble').attr('display', 'none')
+      d3.select('.country-bubble-group').attr('display', 'initial')
+      d3.selectAll('.country-bubble').attr('r', 0)
+      d3.selectAll('.country-bubble').transition().duration(750).attr('r', function (d) {
+        return d.maternityLeave
+      })
+      d3.select('.country-annotation-group').attr('display', 'initial')
     }
     activateFunctions[2] = function () {
-      console.log('hi')
-      // if (d3.select('.annotation-group')) { // remove annotations // HACK 
-      //   d3.select('.annotation-group').transition().style('opacity', 0).remove()
-      // }
+      d3.selectAll('.maternity-bubble').attr('display', 'initial')
+      d3.selectAll('.maternity-circle').attr('r', 0)
+      d3.selectAll('.maternity-circle').transition().duration(750).attr('r', function (d) {
+        return d.MaternityLeave
+      })
+      d3.select('.country-bubble-group').attr('display', 'none')
+      d3.select('.country-annotation-group').attr('display', 'none')
+      d3.select('.maternity-annotation-group').attr('display', 'none')
     }
     activateFunctions[3] = function() { 
-      console.log('hi')
-      // bubbleChart.annotate() 
+      d3.selectAll('.maternity-bubble').attr('display', 'initial')
+      d3.select('.maternity-annotation-group').attr('display', 'initial')
+      d3.select('.maternity-annotation-group').attr('opacity', '0')
+      d3.select('.maternity-annotation-group').transition().duration(750).attr('opacity', '1')
     }
     activateFunctions[4] = function() { 
-      console.log('hi')
-      // if (d3.select('.annotation-group')) { // remove annotations // HCACK 
-      //   d3.select('.annotation-group').transition().style('opacity', 0).remove()
-      // }
-      // bubbleChart.showTechnology()
-    } // rearranges bubbles
+      showLarger()
+      d3.select('.maternity-annotation-group').attr('display', 'none')
+    }
     activateFunctions[5] = function () {
-      console.log('hi')
+      d3.selectAll('.maternity-bubble').attr('display', 'initial')
+      d3.select('.average-group').attr('display', 'none')
+      showSmaller()
+    }
+    activateFunctions[6] = function () {
+      d3.select('.average-group').attr('display', 'initial')
+      d3.selectAll('.maternity-bubble').attr('display', 'none')
+      d3.select('.average-group').attr('opacity', '0')
+      d3.select('.average-group').transition().duration(750).attr('opacity', '1')
     }
 
-    for (var i = 0; i < 6; i++) {
-      updateFunctions[i] = function () {};
+
+    for (var i = 0; i < 7; i++) {
+      updateFunctions[i] = function () {}
     }
   }
 
@@ -92,7 +122,7 @@ d3.csv('maternity-data.csv').then(data => {
     d3.selectAll('.step')
       .transition()
       .style('opacity', function (d, i) {
-        return i === index ? 1 : 0.1;
+        return i === index ? 1 : 0.1
       })
 
     activate(index)
@@ -104,7 +134,7 @@ d3.csv('maternity-data.csv').then(data => {
 })
 
 // CHART CREATION
-let chart = function chart(data, industries, color) {
+function chart(data, industries, color) {
   let nodes = data
 
   // BUBBLE FORCE CREATION
@@ -127,8 +157,6 @@ let chart = function chart(data, industries, color) {
       let index = industries.indexOf(d.Industry)
       return color(index)
     })
-    .style('stroke', '#cacbcc')
-    .style('stroke-width', '0.3')
     .attr('class', function (d) {
       return d.Company + ' maternity-circle'
     })
@@ -139,6 +167,7 @@ let chart = function chart(data, industries, color) {
 
   let labels = d3.selectAll('.maternity-bubble')
     .append('g')
+    .attr('class', 'maternity-text')
 
   let numbers = labels.append('text')
     .attr('x', function (d) {
@@ -148,13 +177,12 @@ let chart = function chart(data, industries, color) {
       return d.y
     })
     .attr('dy', 4)
-    .style('text-anchor', 'middle')
     .text(function (d) {
       if (d.MaternityLeave != 0) {
         return d.MaternityLeave
       }
     })
-    .style('font-size', '15px')
+    .attr('class', 'numbers-text')
 
   function ticked() {
     bubbles.attr('cx', function (d) {
@@ -177,94 +205,111 @@ let chart = function chart(data, industries, color) {
   }
 
   let g = svg.append('g')
-    .attr('transform', 'translate(' + 0 + ',' + 10 + ')')
+    .attr('transform', 'translate(' + 0 + ',' + 20 + ')')
     .attr('class', 'description')
 
   let companyName = g.append('text')
-    .style('font-size', '15px')
-    .style('font-family', 'Times New Roman')
-    .style('font-weight', 700)
-    .style('opacity', 0)
+    .attr('class', 'company-name')
+    .style('opacity', 1)
 
   let companyNumber = g.append('text')
     .attr('dy', 20)
-    .attr('font-size', '12px')
-    .style('opacity', 0)
+    .attr('class', 'company-number')
+    .style('opacity', 1)
 
   let companyIndustry = g.append('text')
     .attr('dy', 40)
-    .attr('font-size', '12px')
-    .style('opacity', 0)
+    .attr('class', 'company-industry')
+    .style('opacity', 1)
 
   d3.selectAll('.maternity-bubble').on('mouseover', function (d) {
     d3.select(this).transition().style('opacity', 0.5)
-    companyName.text(d.Company).transition().style('opacity', 1)
-    companyNumber.text('Maternity Leave: ' + d.MaternityLeave).transition().style('opacity', 1)
-    companyIndustry.text('Industry: ' + d.Industry).transition().style('opacity', 1)
+    companyName.text(d.Company)
+    companyNumber.text('Maternity Leave: ' + d.MaternityLeave)
+    companyIndustry.text('Industry: ' + d.Industry)
+    d3.select('.description').transition().style('opacity', 1)
   })
 
   d3.selectAll('.maternity-bubble').on('mouseout', function (d) {
     d3.select(this).transition().style('opacity', 1)
-    companyName.transition().style('opacity', 0)
-    companyNumber.transition().style('opacity', 0)
-    companyIndustry.transition().style('opacity', 0)
+    d3.select('.description').transition().style('opacity', 0)
   })
+}
 
-  chart.annotate = function() {
-    d3.selectAll('.maternity-bubble').transition().duration(2000).attr('display', function (d) {
-      if (d.MaternityLeave <= 30) {
-        return 'initial'
-      }
-    })
-
-    let annotations = [
-      {
-        note: {
-          title: 'Netflix',
-        },
-        subject: {
-          radius: 0,
-        },
-        type: d3.annotationCalloutCircle,
-        x: 386.50266781773155,
-        y: 240.6228904261989,
-        dy: -150,
-        dx: 150,
+function annotate() {
+  let annotations = [{
+      note: {
+        title: 'Netflix',
       },
-      {
-        note: {
-          title: 'Bill and Melinda Gates Foundation',
-        },
-        subject: {
-          radius: 0,
-        },
-        type: d3.annotationCalloutCircle,
-        x: 192.72,
-        y: 331.512,
-        dy: 150,
-        dx: -50,
-      }
-    ]
+      subject: {
+        radius: 0,
+      },
+      type: d3.annotationCalloutCircle,
+      x: 445.001,
+      y: 172.018,
+      dy: -120,
+      dx: 120,
+    },
+    {
+      note: {
+        title: 'Bill and Melinda Gates Foundation',
+      },
+      subject: {
+        radius: 0,
+      },
+      type: d3.annotationCalloutCircle,
+      x: 238.795,
+      y: 308.574,
+      dy: -225,
+      dx: -50,
+    }
+  ]
 
-    let makeAnnotations = d3.annotation()
-      .type(d3.annotationLabel)
-      .annotations(annotations)
+  let makeAnnotations = d3.annotation()
+    .type(d3.annotationLabel)
+    .annotations(annotations)
 
-    let annotationGroup = svg.append('g')
-      .attr('class', 'annotation-group')
-      .attr('opacity', 0)
-      .call(makeAnnotations)
+  let annotationGroup = svg.append('g')
+    .attr('class', 'maternity-annotation-group')
+    .attr('opacity', 0)
+    .call(makeAnnotations)
 
-    annotationGroup.transition().duration(750).attr('opacity', 1)
-  }
+  annotationGroup.transition().duration(750).attr('opacity', 1)
+}
 
-  chart.showTechnology = function() {
-    d3.selectAll('.maternity-bubble').transition().duration(2000).attr('display', function(d) {
+function showLarger() {
+  d3.selectAll('.maternity-bubble').attr('display', function (d) {
       if (d.MaternityLeave <= 30) {
         return 'none'
       }
     })
-  }
+}
+
+function showSmaller() {
+  d3.selectAll('.maternity-bubble').attr('display', function (d) {
+      if (d.MaternityLeave >= 15) {
+        return 'none'
+      }
+    })
+}
+
+function showAvg(data) {
+  let average = calculateAvg(data)
+
+  let g = svg.append('g')
+    .attr('class', 'average-group')
+  
+  let groupX = width / 2 - (g.node().getBBox().width / 2)
+
+  g.attr('transform', 'translate(' + groupX + ',' + height / 2 + ')')
+  
+  g.append('text')
+    .text(average.toString())
+    .attr('class', 'average')
+
+  g.append('text')
+    .text('Average number weeks paid maternity leave').attr('dy', 30)
+    .attr('class', 'subtext')
 }
 
 function countryComparison() {
@@ -278,7 +323,7 @@ function countryComparison() {
     { country: 'US', maternityLeave: 1, note: 'Nothing' }
   ]
 
-  let color = d3.scaleSequential(d3.interpolatePuBu).domain([0, countryLeaves.length])
+  let color = d3.scaleSequential(d3.interpolatePuRd).domain([0, countryLeaves.length])
 
   let g = svg.append('g')
     .attr('transform', 'translate(' + circleMargin + ',' + height / 2 + ')')
@@ -296,11 +341,9 @@ function countryComparison() {
     .attr('fill', function(d, i) {
       return color(i)
     })
-    .style('stroke', '#cacbcc')
-    .style('stroke-width', '0.3')
     .attr('class', 'country-bubble')
   
-  countryBubbles.transition().duration(1000).attr('r', function(d) {
+  countryBubbles.transition().duration(750).attr('r', function(d) {
     return d.maternityLeave
   })
 
@@ -326,9 +369,20 @@ function countryComparison() {
     .annotations(annotations)
 
   let countryAnnotationGroup = svg.append('g')
-    .attr('class', 'annotation-group')
+    .attr('class', 'country-annotation-group')
     .attr('opacity', 0)
     .call(makeAnnotations)
 
   countryAnnotationGroup.transition().duration(750).attr('opacity', 1)
 }
+
+function calculateAvg(array) {
+  let sum = 0
+  let count = array.length
+  for (let i = 0; i < count; i++) {
+    sum = sum + parseFloat(array[i].MaternityLeave)
+  }
+  let average = sum / count
+  return Math.round(average * 10) / 10
+}
+
