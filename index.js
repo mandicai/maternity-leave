@@ -43,7 +43,7 @@ d3.csv('maternity-data.csv').then(data => {
       if (d3.select('.annotation-group')) { // remove annotations // HCACK 
         d3.select('.annotation-group').transition().style('opacity', 0).remove()
       }
-      chart.sortChart()
+      chart.showTechnology()
     } // rearranges bubbles
     activateFunctions[3] = function () {
       console.log('hi')
@@ -202,6 +202,12 @@ let chart = function chart(data, industries, color) {
   })
 
   chart.annotate = function() {
+    d3.selectAll('.maternity-bubble').transition().duration(2000).attr('display', function (d) {
+      if (d.MaternityLeave <= 30) {
+        return 'initial'
+      }
+    })
+
     let annotations = [{
         note: {
           title: 'Netflix',
@@ -242,69 +248,75 @@ let chart = function chart(data, industries, color) {
     annotationGroup.transition().duration(750).attr('opacity', 1)
   }
 
-  chart.sortChart = function() {
-    let margin = {
-      top: 50,
-      bottom: 50,
-      right: 50,
-      left: 50
-    }
-
-    let categories = ['>= 50', '>= 40', '>= 30', '>= 20', '>= 10']
-
-    let y = d3.scalePoint()
-      .rangeRound([0, 500])
-      .domain(categories)
-
-    let scale = svg.append("g")
-      .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
-
-    scale.append("g")
-      .attr("class", "axis axis--y")
-      .call(d3.axisLeft(y))
-
-    //GRID LINES
-    function yGridlines() {
-      return d3.axisLeft(y)
-    }
-
-    let grid = svg.append('g')
-      .attr('class', 'grid')
-      .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
-      .call(yGridlines()
-        .tickSize(-500)
-        .tickFormat('')
-      )
-      .attr("color", "#cacbcc")
-
-    scale.selectAll('.domain').remove()
-    scale.selectAll('.tick line').remove()
-
-    grid.selectAll('.domain').remove()
-
-    function yCenter(value) {
-      if (value < 10) {
-        return 16.5 + y.step() * 5
-      } else if (value >= 10 && value < 20) {
-        return 16.5 + y.step() * 5
-      } else if (value >= 20 && value < 30) {
-        return 16.5 + y.step() * 4
-      } else if (value >= 30 && value < 40) {
-        return 16.5 + y.step() * 3
-      } else if (value >= 40 && value < 50) {
-        return 16.5 + y.step() * 2
-      } else if (value >= 50) {
-        return 16.5 + y.step()
+  chart.showTechnology = function() {
+    d3.selectAll('.maternity-bubble').transition().duration(2000).attr('display', function(d) {
+      if (d.MaternityLeave <= 30) {
+        return 'none'
       }
-    }
+    })
 
-    simulation.force('y', d3.forceY().y(function(d) {
-      return yCenter(d.MaternityLeave)
-    }).strength(0.5))
+    // let margin = {
+    //   top: 50,
+    //   bottom: 50,
+    //   right: 50,
+    //   left: 50
+    // }
 
-    simulation.force('center', d3.forceCenter(600 / 2, 600/ 1.5))
+    // let categories = ['>= 50', '>= 40', '>= 30', '>= 20', '>= 10']
 
-    simulation.alpha(0.5).restart()
+    // let y = d3.scalePoint()
+    //   .rangeRound([0, 500])
+    //   .domain(categories)
+
+    // let scale = svg.append("g")
+    //   .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+
+    // scale.append("g")
+    //   .attr("class", "axis axis--y")
+    //   .call(d3.axisLeft(y))
+
+    // //GRID LINES
+    // function yGridlines() {
+    //   return d3.axisLeft(y)
+    // }
+
+    // let grid = svg.append('g')
+    //   .attr('class', 'grid')
+    //   .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+    //   .call(yGridlines()
+    //     .tickSize(-500)
+    //     .tickFormat('')
+    //   )
+    //   .attr("color", "#cacbcc")
+
+    // scale.selectAll('.domain').remove()
+    // scale.selectAll('.tick line').remove()
+
+    // grid.selectAll('.domain').remove()
+
+    // function yCenter(value) {
+    //   if (value < 10) {
+    //     return 16.5 + y.step() * 5
+    //   } else if (value >= 10 && value < 20) {
+    //     return 16.5 + y.step() * 5
+    //   } else if (value >= 20 && value < 30) {
+    //     return 16.5 + y.step() * 4
+    //   } else if (value >= 30 && value < 40) {
+    //     return 16.5 + y.step() * 3
+    //   } else if (value >= 40 && value < 50) {
+    //     return 16.5 + y.step() * 2
+    //   } else if (value >= 50) {
+    //     return 16.5 + y.step()
+    //   }
+    // }
+
+    // simulation.force('y', d3.forceY().y(function(d) {
+    //   return yCenter(d.MaternityLeave)
+    // }).strength(0.5))
+
+    // simulation.force('center', d3.forceCenter(600 / 2, 600/ 1.5))
+
+    // simulation.alpha(0.5).restart()
 
     // let gridCenters = {}
     // let gridDimensions = {
