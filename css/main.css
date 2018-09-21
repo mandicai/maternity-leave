@@ -2,7 +2,6 @@ body {
   font-family: "Muli", sans-serif;
   font-weight: 100;
   width: 100%;
-  height: 2500px;
 }
 
 h1, h3 {
@@ -36,6 +35,14 @@ p {
 
 .step {
   margin-bottom: 200px;
+}
+
+.step div {
+  margin-bottom: 15px;
+}
+
+.last-step {
+  margin-bottom: 75%;
 }
 
 .content {
