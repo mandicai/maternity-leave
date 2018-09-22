@@ -5,15 +5,17 @@
 // Use text-anchor: middle to center the text.
 // The function ticked controls how the circles and text change position during
 // the force simulation.
-
+// Harry's, L'Oreal, McDonald's, Christie's, Dunkin' Donuts, Moody's, Saint Michael's College, Cozen O'Connor, Harper's Bazaar,
+// St. Edward's University, Claire's, Land O'Lakes, Inc., Macy's, Inc.
+// Page 78 is where the maternity leave stops
 // CHART SETUP
-let width = 700, height = 700
+let width = 1000, height = 1000
 
 let svg = d3.select('#maternity-bubble-chart')
   .append('svg')
   .attr('viewBox', '0 0' + ' ' + width + ' ' + height)
 
-d3.csv('maternity-data.csv').then(data => {
+d3.json('maternity-leave.json').then(data => {
  let industries = []
 
   data.forEach(datum => {
@@ -22,7 +24,7 @@ d3.csv('maternity-data.csv').then(data => {
     }
   })
 
-  let color = d3.scaleSequential(d3.interpolateBuPu).domain([0, industries.length + 2])
+  let color = d3.scaleSequential(d3.interpolatePuRd).domain([0, industries.length + 2])
 
   let lastIndex = -1
   let activeIndex = 0
@@ -174,8 +176,10 @@ function chartDisplay(data, industries, color) {
     numbers.exit().remove()
   }
 
+  let descriptionMargin = height - 50
+
   let g = svg.append('g')
-    .attr('transform', 'translate(' + 0 + ',' + 20 + ')')
+    .attr('transform', 'translate(' + 0 + ',' + descriptionMargin + ')')
     .attr('class', 'description')
 
   let companyName = g.append('text')
@@ -221,7 +225,7 @@ function averageDisplay(data) {
     .attr('class', 'average')
 
   g.append('text')
-    .text('Average number weeks paid maternity leave').attr('dy', 30)
+    .text('Average number weeks paid maternity leave').attr('dy', 50)
     .attr('class', 'subtext')
 }
 
@@ -251,7 +255,7 @@ function countryComparisonDisplay() {
     {
       country: 'USA',
       maternityLeave: 1,
-      note: '0%'
+      note: 'No policy'
     }
   ]
 
@@ -386,26 +390,26 @@ function annotateDisplay() {
         title: 'Netflix',
       },
       subject: {
-        radius: 0,
+        radius: 52,
       },
       type: d3.annotationCalloutCircle,
-      x: 445.001,
-      y: 172.018,
-      dy: -120,
-      dx: 120,
+      x: 717.893,
+      y: 419.908,
+      dy: -200,
+      dx: 200,
     },
     {
       note: {
         title: 'Bill and Melinda Gates Foundation',
       },
       subject: {
-        radius: 0,
+        radius: 52,
       },
       type: d3.annotationCalloutCircle,
-      x: 238.795,
-      y: 308.574,
-      dy: 250,
-      dx: -100,
+      x: 577.964,
+      y: 337.491,
+      dy: -225,
+      dx: -350,
     }
   ]
 
