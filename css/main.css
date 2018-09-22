@@ -102,14 +102,16 @@ p {
   font-size: 15px;
 }
 
-.average-group .average {
+.average-group .average,
+.larger-percentage-group .larger-percentage {
   font-size: 150px;
   font-family: 'Noto Serif JP', sans-serif;
   font-weight: 900;
   text-anchor: middle;
 }
 
-.average-group .subtext {
+.average-group .average-subtext,
+.larger-percentage-group .larger-percentage-subtext {
   font-size: 30px;
   color: #ccc;
   text-anchor: middle;
