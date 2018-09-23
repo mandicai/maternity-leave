@@ -1320,7 +1320,7 @@
         "MaternityLeave": "16"
     },
     {
-        "Company": "Harrys",
+        "Company": "Harry's",
         "Industry": "Consumer Packaged Goods: Packaged Products",
         "MaternityLeave": "16"
     },
@@ -1790,7 +1790,7 @@
         "MaternityLeave": "12"
     },
     {
-        "Company": "McDonalds Corporation",
+        "Company": "McDonald's Corporation",
         "Industry": "Hospitality: Restaurants",
         "MaternityLeave": "12"
     },
@@ -2560,7 +2560,7 @@
         "MaternityLeave": "12"
     },
     {
-        "Company": "Christies",
+        "Company": "Christie's",
         "Industry": "Fine Art Auctions",
         "MaternityLeave": "12"
     },
@@ -3080,7 +3080,7 @@
         "MaternityLeave": "12"
     },
     {
-        "Company": "Dunkin Donuts",
+        "Company": "Dunkin' Donuts",
         "Industry": "Hospitality: Restaurants",
         "MaternityLeave": "12"
     },
@@ -3455,7 +3455,7 @@
         "MaternityLeave": "10"
     },
     {
-        "Company": "Moodys",
+        "Company": "Moody's",
         "Industry": "Finance: Diversified",
         "MaternityLeave": "10"
     },
@@ -3620,7 +3620,7 @@
         "MaternityLeave": "10"
     },
     {
-        "Company": "Saint Michaels College",
+        "Company": "Saint Michael's College",
         "Industry": "Educational Services: College & University",
         "MaternityLeave": "10"
     },
@@ -3750,7 +3750,7 @@
         "MaternityLeave": "9"
     },
     {
-        "Company": "Cozen OConnor",
+        "Company": "Cozen O'Connor",
         "Industry": "Law Firm",
         "MaternityLeave": "9"
     },
@@ -3850,7 +3850,7 @@
         "MaternityLeave": "8"
     },
     {
-        "Company": "Harpers Bazaar",
+        "Company": "Harper's Bazaar",
         "Industry": "Publishing",
         "MaternityLeave": "8"
     },
@@ -4160,7 +4160,7 @@
         "MaternityLeave": "8"
     },
     {
-        "Company": "St. Edwards University",
+        "Company": "St. Edward's University",
         "Industry": "Educational Services: College & University",
         "MaternityLeave": "8"
     },
@@ -4865,17 +4865,17 @@
         "MaternityLeave": "6"
     },
     {
-        "Company": "Claires",
+        "Company": "Claire's",
         "Industry": "Retail: Shoes, Accessories and Apparel",
         "MaternityLeave": "6"
     },
     {
-        "Company": "Land OLakes, Inc.",
+        "Company": "Land O'Lakes, Inc.",
         "Industry": "Consumer Packaged Goods: Packaged Foods",
         "MaternityLeave": "6"
     },
     {
-        "Company": "Macys, Inc.",
+        "Company": "Macy's, Inc.",
         "Industry": "Retail: Department Store",
         "MaternityLeave": "6"
     },
@@ -4893,5 +4893,2258 @@
         "Company": "UPS",
         "Industry": "Transportation: Couriers & Delivery",
         "MaternityLeave": "6"
+    },
+    {
+        "Company": "Purdue University",
+        "Industry": "Educational Services: College & University",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "BorgWarner, Inc.",
+        "Industry": "Automotive: Parts Manufacturing",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Charles Schwab",
+        "Industry": "Finance: Diversified",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Swiss Re",
+        "Industry": "Insurance: Reinsurance",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "7-Eleven",
+        "Industry": "Retail: Convenience Store",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "ADP",
+        "Industry": "Business Services: Human Resources",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Advance Auto Parts",
+        "Industry": "Automotive: Parts",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Aetna Inc.",
+        "Industry": "Insurance: Health",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "AGCO Corporation",
+        "Industry": "Industrial: Equipment Manufacturing",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "AmerisourceBergen",
+        "Industry": "Pharmaceutical",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "ANN Inc.",
+        "Industry": "Retail: Shoes, Accessories and Apparel",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Aramark Holdings Corporation",
+        "Industry": "Business Services: Food & Hospitality",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Avnet, Inc.",
+        "Industry": "Electronics: Wholesaler",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Baker Hughes",
+        "Industry": "Natural Resources: Oilfield Services",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Barnes & Noble",
+        "Industry": "Retail: Books",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Bausch & Lomb",
+        "Industry": "Healthcare: Medical Devices",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Baxter International Inc.",
+        "Industry": "Healthcare: Medical Devices",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Becton, Dickinson and Company",
+        "Industry": "Healthcare: Medical Devices",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Blue Cross Blue Shield",
+        "Industry": "Insurance: Health",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Cameron International Corporation",
+        "Industry": "Natural Resources: Oilfield Services",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "CarMax, Inc.",
+        "Industry": "Automotive: Dealers",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Centene Corporation",
+        "Industry": "Insurance: Health",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Cerner Corporation",
+        "Industry": "Technology: B2B Tech Services",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Spectrum",
+        "Industry": "Telecommunications",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Chevron",
+        "Industry": "Natural Resources: Oil & Gas",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Cintas Corporation",
+        "Industry": "Business Services: Food & Hospitality",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Comcast",
+        "Industry": "Telecommunications",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Danaher Corporation",
+        "Industry": "Industrial: Diversified",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Deere & Company",
+        "Industry": "Industrial: Equipment Manufacturing",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Delta Air Lines, Inc.",
+        "Industry": "Transportation: Passenger Air",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Discover Financial Services",
+        "Industry": "Finance: Credit & Fund Services",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "DTE Energy Company",
+        "Industry": "Natural Resources: Diversified Energy",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Duke Energy Corporation",
+        "Industry": "Natural Resources: Electric Power Generation",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "DuPont",
+        "Industry": "Natural Resources: Chemicals",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Emerson Electric Co.",
+        "Industry": "Industrial: Materials",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Entergy Corporation",
+        "Industry": "Natural Resources: Diversified Energy",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "FedEx Corporation",
+        "Industry": "Transportation: Couriers & Delivery",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Fitch Ratings",
+        "Industry": "Information Services: Financial",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "General Dynamics",
+        "Industry": "Defense & Space",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "General Mills, Inc.",
+        "Industry": "Consumer Packaged Goods: Packaged Foods",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "General Motors",
+        "Industry": "Automotive: Manufacturers",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Georgia Pacific",
+        "Industry": "Consumer Packaged Goods: Packaged Products",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Halliburton",
+        "Industry": "Natural Resources: Oilfield Services",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "The Home Depot",
+        "Industry": "Retail: Furniture & Home Improvement",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Honeywell International Inc.",
+        "Industry": "Industrial: Diversified",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Ipreo Holdings LLC",
+        "Industry": "Information Services: Financial",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "The J.M. Smucker Company",
+        "Industry": "Consumer Packaged Goods: Packaged Foods",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "J.B. Hunt Transport inc",
+        "Industry": "Transportation: Freight & Logistics",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "J.C. Penney Company, Inc.",
+        "Industry": "Retail: Department Store",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "King & Spalding",
+        "Industry": "Law Firm",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Kraft Foods Group, Inc.",
+        "Industry": "Consumer Packaged Goods: Packaged Foods",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "The Kroger Company",
+        "Industry": "Retail: Supermarket Company",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "L Brands, Inc.",
+        "Industry": "Retail: Shoes, Accessories and Apparel",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Lincoln National Corporation",
+        "Industry": "Finance: Asset Management",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Marathon Petroleum",
+        "Industry": "Natural Resources: Oil & Gas",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Marshalls",
+        "Industry": "Retail: Department Store",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "McKesson",
+        "Industry": "Pharmaceutical",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Medtronic, Inc.",
+        "Industry": "Healthcare: Medical Devices",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Memorial Sloan Kettering Cancer Center",
+        "Industry": "Healthcare: Hospitals & Clinics",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Mercedes Benz",
+        "Industry": "Automotive: Manufacturers",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Merck & Co., Inc.",
+        "Industry": "Pharmaceutical",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Mondelez International, Inc.",
+        "Industry": "Consumer Packaged Goods: Packaged Foods",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Motorola Solutions, Inc.",
+        "Industry": "Telecommunications",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Mount Sinai Medical Center",
+        "Industry": "Healthcare: Hospitals & Clinics",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Neiman Marcus",
+        "Industry": "Retail: Department Store",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Net-A-Porter",
+        "Industry": "Retail: Online",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "ICE Futures US",
+        "Industry": "Government: State",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "New York University",
+        "Industry": "Educational Services: College & University",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Newell Rubbermaid",
+        "Industry": "Consumer Packaged Goods: Packaged Products",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Norfolk Southern Corporation",
+        "Industry": "Transportation: Rail",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Novartis",
+        "Industry": "Pharmaceutical",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Novo Nordisk",
+        "Industry": "Pharmaceutical",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "NRG Energy, Inc.",
+        "Industry": "Natural Resources: Diversified Energy",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Occidental Petroleum Corporation",
+        "Industry": "Natural Resources: Oil & Gas",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Pfizer",
+        "Industry": "Pharmaceutical",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Phillips 66",
+        "Industry": "Natural Resources: Oil & Gas",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "PVH Corp.",
+        "Industry": "Retail: Shoes, Accessories and Apparel",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Quest",
+        "Industry": "Industrial: Engineering",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Revlon",
+        "Industry": "Cosmetics",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Rite Aid Corporation",
+        "Industry": "Pharmacies & Drug Stores",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Ryder Transportation",
+        "Industry": "Transportation: Freight & Logistics",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Scripps Health",
+        "Industry": "Healthcare: Hospitals & Clinics",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Sears Holdings Corporation",
+        "Industry": "Retail: General Merchandise",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Shell Oil",
+        "Industry": "Natural Resources: Oil & Gas",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "ShopRite",
+        "Industry": "Retail: General Merchandise",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Sikorsky",
+        "Industry": "Aerospace",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Southwest Airlines Co.",
+        "Industry": "Transportation: Passenger Air",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "State Farm",
+        "Industry": "Insurance: Property & Casualty",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "The Gap, Inc.",
+        "Industry": "Retail: Shoes, Accessories and Apparel",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "The Sherwin-Williams Company",
+        "Industry": "Industrial: Building Materials Manufacturing",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "The TJX Companies, Inc.",
+        "Industry": "Retail: Department Store",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Time Warner Inc.",
+        "Industry": "Media: Diversified",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Travelers",
+        "Industry": "Insurance: Property & Casualty",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Tyson Foods, Inc.",
+        "Industry": "Consumer Packaged Goods: Packaged Foods",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Union Pacific Corporation",
+        "Industry": "Transportation: Rail",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "UnitedHealth Group",
+        "Industry": "Insurance: Health",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "United States Steel Corporation",
+        "Industry": "Natural Resources: Metals & Mining",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Valeant",
+        "Industry": "Pharmaceutical",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Veolia",
+        "Industry": "Services: Waste Management",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Visa Inc.",
+        "Industry": "Finance: Credit & Fund Services",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Walgreens",
+        "Industry": "Pharmacies & Drug Stores",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Waste Management, Inc.",
+        "Industry": "Services: Waste Management",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Weatherford International Inc.",
+        "Industry": "Natural Resources: Oilfield Services",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "WellCare Health Plans, Inc.",
+        "Industry": "Insurance: Health",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Whirlpool Corporation",
+        "Industry": "Industrial: Appliances & Furniture",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Wolters Kluwer",
+        "Industry": "Information Services: Diversified",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Xerox Corporation",
+        "Industry": "Business Services: Technology Solutions",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Navigant Consulting",
+        "Industry": "Consulting Services",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Sephora",
+        "Industry": "Cosmetics",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "LenderLive Network",
+        "Industry": "Finance: Credit & Fund Services",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "EShots",
+        "Industry": "Advertising",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Creganna Medical",
+        "Industry": "Healthcare: Medical Devices",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Liberty Property Trust",
+        "Industry": "Real Estate: Investment Trust",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "St. Jude Childrens Research Hospital",
+        "Industry": "Healthcare: Hospitals & Clinics",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Kaplan Test Prep",
+        "Industry": "Educational Services: Management",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Garmin",
+        "Industry": "Technology: Manufacturing",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "March of Dimes",
+        "Industry": "Nonprofit: Healthcare",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Petsmart",
+        "Industry": "Retail: General Merchandise",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "GDIT",
+        "Industry": "Technology: B2B Tech Services",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "The MITRE Corporation",
+        "Industry": "Nonprofit: Research",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Hotwire",
+        "Industry": "Technology: Consumer Internet",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "CBRE Group, Inc",
+        "Industry": "Real Estate: Development & Management",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "SalonCentric",
+        "Industry": "Wholesale",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Dillards",
+        "Industry": "Retail: Department Store",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "St. Lukes Hospital",
+        "Industry": "Healthcare: Hospitals & Clinics",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Lubrizol",
+        "Industry": "Natural Resources: Chemicals",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Parallon",
+        "Industry": "Healthcare: Services",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "FirstMerit Bank",
+        "Industry": "Finance: Diversified",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Regal Entertainment Group",
+        "Industry": "Arts & Entertainment",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Honda Motor Corporation",
+        "Industry": "Automotive: Manufacturers",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Raining Rose",
+        "Industry": "Cosmetics",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Mylan",
+        "Industry": "Pharmaceutical",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Tommy Hilfiger Corporation",
+        "Industry": "Retail: Shoes, Accessories and Apparel",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Interval International",
+        "Industry": "Leisure, Travel & Tourism",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Loyola University Chicago",
+        "Industry": "Educational Services: College & University",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Randstad",
+        "Industry": "Business Services: Human Resources",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "WebMD",
+        "Industry": "Technology: Consumer Internet",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Joy Global Inc",
+        "Industry": "Industrial: Equipment Manufacturing",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "American Eagle Outfitters",
+        "Industry": "Retail: Shoes, Accessories and Apparel",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Navy Federal Credit Union",
+        "Industry": "Finance: Credit Unions",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Perrigo",
+        "Industry": "Pharmaceutical",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Dstillery",
+        "Industry": "Advertising",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Vineyard Vines",
+        "Industry": "Retail: Shoes, Accessories and Apparel",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Farmers Insurance",
+        "Industry": "Insurance: Property & Casualty",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "CWCapital",
+        "Industry": "Real Estate: Investment Trust",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Hautelook",
+        "Industry": "Retail: Online",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Frys Food & Drug Stores",
+        "Industry": "Retail: Supermarket Company",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Southern Methodist University",
+        "Industry": "Educational Services: College & University",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Solstice Mobile",
+        "Industry": "Technology: B2B Tech Services",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Paychex Inc",
+        "Industry": "Business Services: Staffing & Outsourcing",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "INC Research",
+        "Industry": "Pharmaceutical",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "The College Board",
+        "Industry": "Educational Services: Management",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "The Wonderful Company",
+        "Industry": "Consumer Packaged Goods: Packaged Foods",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Columbia University Medical Center",
+        "Industry": "Healthcare: Hospitals & Clinics",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Public Broadcasting Service",
+        "Industry": "Media: Television",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Aurora Health Care",
+        "Industry": "Healthcare: Hospitals & Clinics",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Moss Adams",
+        "Industry": "Accounting Services",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Kaplan International",
+        "Industry": "Educational Services: Management",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Waffle House",
+        "Industry": "Hospitality: Restaurants",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Santander",
+        "Industry": "Finance: Personal & Commercial Banking",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "The Advisory Board Company",
+        "Industry": "Consulting Services",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "LearnVest",
+        "Industry": "Technology: Financial Services",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Corning Incorporated",
+        "Industry": "Industrial: Materials",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Interbrand",
+        "Industry": "Advertising",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Invesco",
+        "Industry": "Finance: Asset Management",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Sandia National Labs",
+        "Industry": "Government: Contractor",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Cadillac",
+        "Industry": "Automotive: Manufacturers",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Bosch",
+        "Industry": "Industrial: Appliances & Furniture",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Emerald Expositions",
+        "Industry": "Business Services: Business Events",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "The Wharton School",
+        "Industry": "Educational Services: College & University",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "The Trium Group",
+        "Industry": "Consulting Services",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "UF Health",
+        "Industry": "Healthcare: Hospitals & Clinics",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Angies List",
+        "Industry": "Technology: Consumer Internet",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "ServiceNow",
+        "Industry": "Technology: Software",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Cadence Design Systems",
+        "Industry": "Technology: Manufacturing",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Scottrade",
+        "Industry": "Finance: Asset Management",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "TD Ameritrade",
+        "Industry": "Finance: Diversified",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "FSG",
+        "Industry": "Consulting Services",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Ashland, Inc.",
+        "Industry": "Natural Resources: Chemicals",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Windstream Communications",
+        "Industry": "Telecommunications",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Ogilvy PR",
+        "Industry": "Public Relations",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Neo@Ogilvy",
+        "Industry": "Advertising",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Medline Industries",
+        "Industry": "Healthcare: Medical Devices",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "MedRisk",
+        "Industry": "Insurance: Diversified",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Carolinas HealthCare System",
+        "Industry": "Healthcare: Hospitals & Clinics",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Burger King",
+        "Industry": "Hospitality: Restaurants",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "The Bon-Ton Stores",
+        "Industry": "Retail: Department Store",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Athleta",
+        "Industry": "Retail: Shoes, Accessories and Apparel",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Appirio Inc.",
+        "Industry": "Technology: B2B Tech Services",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Alexander Mann Solutions",
+        "Industry": "Business Services: Staffing & Outsourcing",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Amerigroup",
+        "Industry": "Insurance: Health",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "BMC Software Inc.",
+        "Industry": "Technology: Software",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Alameda County, California",
+        "Industry": "Government: State",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Carestream",
+        "Industry": "Healthcare: Services",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Abbott Vascular",
+        "Industry": "Healthcare: Medical Devices",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "AbbVie Inc.",
+        "Industry": "Pharmaceutical",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "St. Bonaventure University",
+        "Industry": "Educational Services: College & University",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Dicks Sporting Goods",
+        "Industry": "Retail: Shoes, Accessories and Apparel",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Expeditors International",
+        "Industry": "Transportation: Freight & Logistics",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Great American Insurance Group",
+        "Industry": "Insurance: Property & Casualty",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Genesco Inc.",
+        "Industry": "Retail: Shoes, Accessories and Apparel",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Allegion PLC",
+        "Industry": "Technology: Security",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Brookdale Senior Living",
+        "Industry": "Services: Senior Living",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "University of Minnesota",
+        "Industry": "Educational Services: College & University",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "ONEOK",
+        "Industry": "Natural Resources: Oil & Gas",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "VF Corporation",
+        "Industry": "Retail: Shoes, Accessories and Apparel",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "BCW",
+        "Industry": "Public Relations",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "FHI 360",
+        "Industry": "Nonprofit: Development",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Hayneedle",
+        "Industry": "Retail: Online",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Ocwen",
+        "Industry": "Finance: Diversified",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Yazaki North America",
+        "Industry": "Automotive: Parts Manufacturing",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Rush University Medical Center",
+        "Industry": "Healthcare: Hospitals & Clinics",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Gymboree",
+        "Industry": "Retail: Baby products",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Bottle Rocket LLC",
+        "Industry": "Technology: Software",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Wellesley College",
+        "Industry": "Educational Services: College & University",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Loyola University Health System",
+        "Industry": "Healthcare: Hospitals & Clinics",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Lewis Brisbois Bisgaard & Smith LLP",
+        "Industry": "Law Firm",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Say Media",
+        "Industry": "Advertising",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Plante Moran",
+        "Industry": "Accounting Services",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Keurig",
+        "Industry": "Industrial: Appliances & Furniture",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "University of Pittsburgh Medical Center",
+        "Industry": "Healthcare: Hospitals & Clinics",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Ipsos",
+        "Industry": "Advertising: Market Research",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Highmark Inc.",
+        "Industry": "Insurance: Health",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Fleishman-Hillard Inc.",
+        "Industry": "Public Relations",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Dentsply International",
+        "Industry": "Healthcare: Medical Devices",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Chemonics",
+        "Industry": "Consulting Services",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Leidos",
+        "Industry": "Technology: B2B Tech Services",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Beveridge & Diamond",
+        "Industry": "Law Firm",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Amdocs",
+        "Industry": "Technology: B2B Tech Services",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Frog Design Inc",
+        "Industry": "Design",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Sungard Availability Services",
+        "Industry": "Technology: B2B Tech Services",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Alcon",
+        "Industry": "Pharmaceutical",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "American City Business Journals",
+        "Industry": "Publishing",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Physician Affiliate Group of New York",
+        "Industry": "Healthcare: Hospitals & Clinics",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "PAE",
+        "Industry": "Government: Contractor",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "University of Cincinnati",
+        "Industry": "Educational Services: College & University",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Horizon Blue Cross Blue Shield of New Jersey",
+        "Industry": "Insurance: Health",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Baylor University Medical Center",
+        "Industry": "Healthcare: Hospitals & Clinics",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "University of Arizona",
+        "Industry": "Educational Services: College & University",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Cardinal Solutions",
+        "Industry": "Technology: B2B Tech Services",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "TriHealth",
+        "Industry": "Healthcare: Hospitals & Clinics",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Blue Cross and Blue Shield of Minnesota",
+        "Industry": "Insurance: Health",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "California State University, Northridge",
+        "Industry": "Educational Services: College & University",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "American Automobile Association",
+        "Industry": "Nonprofit: Trade Organization",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Michaels",
+        "Industry": "Retail: Crafts, Fabrics & Party Supplies",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Rockwell Automation",
+        "Industry": "Industrial: Equipment Manufacturing",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "TIBCO",
+        "Industry": "Technology: Software",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "G2 Web Services, LLC",
+        "Industry": "Technology: B2B Tech Services",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "American University",
+        "Industry": "Educational Services: College & University",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Sterling Brands",
+        "Industry": "Advertising",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Weill Cornell Medicine",
+        "Industry": "Educational Services: College & University",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Spiceworks",
+        "Industry": "Information Services: Technology",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Gateway Media",
+        "Industry": "Technology: Consumer Internet",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Medical Information Technology, Inc.",
+        "Industry": "Technology: B2B Tech Services",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "CH2M Hill",
+        "Industry": "Industrial: Engineering",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Dave & Busters",
+        "Industry": "Hospitality: Restaurants",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "ASPCA",
+        "Industry": "Nonprofit: Animal Welfare",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Applied Physics Laboratory",
+        "Industry": "Educational Services: College & University",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "The Freudenberg Group",
+        "Industry": "Industrial: Diversified",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Barneys New York",
+        "Industry": "Retail: Department Store",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "TracFone Wireless",
+        "Industry": "Telecommunications",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Answers Corporation",
+        "Industry": "Technology: Consumer Internet",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Catholic Health Initiatives",
+        "Industry": "Healthcare: Hospitals & Clinics",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "California Institute of Technology",
+        "Industry": "Educational Services: College & University",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Alere Inc",
+        "Industry": "Healthcare: Medical Devices",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Catholic Relief Services",
+        "Industry": "Nonprofit: Humanitarian Aid Organization",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Bechtel",
+        "Industry": "Industrial: Construction Company",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "American Association of Retired Persons",
+        "Industry": "Nonprofit: Interest Group",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Bard Medical",
+        "Industry": "Healthcare: Medical Devices",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "DELPHI",
+        "Industry": "Automotive: Parts Manufacturing",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "California State University, Sacramento",
+        "Industry": "Educational Services: College & University",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Affymetrix",
+        "Industry": "Healthcare: Biotechnology",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Management Sciences for Health",
+        "Industry": "Nonprofit: Healthcare",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Security Mutual Life Insurance Co",
+        "Industry": "Insurance: Life",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Cushman & Wakefield",
+        "Industry": "Real Estate: Development & Management",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Pick n Save",
+        "Industry": "Retail: Supermarket Company",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "NiSource",
+        "Industry": "Natural Resources: Electric & Gas Utilities",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Kent State University",
+        "Industry": "Educational Services: College & University",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "IPG Mediabrands",
+        "Industry": "Advertising",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Synchrony Financial",
+        "Industry": "Finance: Personal & Commercial Banking",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "AdvantageCare Physicians",
+        "Industry": "Healthcare: Hospitals & Clinics",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "SurveyGizmo",
+        "Industry": "Technology: Software",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "American Management Association",
+        "Industry": "Nonprofit: Professional Development",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Bremer Bank, N.A.",
+        "Industry": "Finance: Diversified",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "British Airways",
+        "Industry": "Transportation: Passenger Air",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "CohnReznick",
+        "Industry": "Accounting Services",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "AkzoNobel Global",
+        "Industry": "Natural Resources: Chemicals",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "American Academy Of Pediatrics",
+        "Industry": "Nonprofit: Medical",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "California Air Resources Board",
+        "Industry": "Government: State",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Allscripts",
+        "Industry": "Technology: Software",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Trey Resources, Inc.",
+        "Industry": "Natural Resources: Oil & Gas",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Possible",
+        "Industry": "Design",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Cook Medical",
+        "Industry": "Healthcare: Medical Devices",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "CUNA Mutual Group",
+        "Industry": "Insurance: Diversified",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "IATSE Labor Union",
+        "Industry": "Nonprofit: Interest Group",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Nobia",
+        "Industry": "Industrial: Appliances & Furniture",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Softchoice",
+        "Industry": "Information Services: Technology",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Scoutmob",
+        "Industry": "Technology: Consumer Internet",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Management Concepts",
+        "Industry": "Educational Services: Professional Training",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Motivate",
+        "Industry": "Technology: Financial Services",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Learfield Sports",
+        "Industry": "Sports",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Arizona State University",
+        "Industry": "Educational Services: College & University",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "SPS Commerce",
+        "Industry": "Information Services: Technology",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Interstate Hotels & Resorts",
+        "Industry": "Hospitality: Hotels",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Hewlett Packard Enterprise",
+        "Industry": "Technology: B2B Tech Services",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "EvergreenHealth",
+        "Industry": "Healthcare: Hospitals & Clinics",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Carlson Capital, LP",
+        "Industry": "Finance: Asset Management",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Fallon",
+        "Industry": "Advertising",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Caliber Home Loans",
+        "Industry": "Finance: Loans",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Smarsh",
+        "Industry": "Information Services: Technology",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Childrens National Health System",
+        "Industry": "Healthcare: Family Care",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Loves",
+        "Industry": "Retail: Convenience Store",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Owens Corning",
+        "Industry": "Industrial: Building Materials Manufacturing",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Mojotech",
+        "Industry": "Technology: Software",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Xcenda",
+        "Industry": "Consulting Services",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Compass Group PLC",
+        "Industry": "Business Services: Food & Hospitality",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "The Pew Charitable Trusts",
+        "Industry": "Nonprofit: Charity",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Sony Pictures",
+        "Industry": "Arts & Entertainment",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Aldi US",
+        "Industry": "Retail: Discount Store",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Seqirus Worldwide",
+        "Industry": "Pharmaceutical",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "The Hartford",
+        "Industry": "Insurance: Property & Casualty",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Giant Eagle",
+        "Industry": "Retail: Supermarket Company",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "About.com",
+        "Industry": "Technology: Consumer Internet",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Alarm.com",
+        "Industry": "Technology: Security",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Fast Enterprises, LLC",
+        "Industry": "Technology: Software",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "North Dakota State University",
+        "Industry": "Educational Services: College & University",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Ingram Content Group",
+        "Industry": "Business Services: Other",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "PennyMac Loan Services",
+        "Industry": "Finance: Loans",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "C. H. Robinson",
+        "Industry": "Transportation: Freight & Logistics",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "WomanCare",
+        "Industry": "Healthcare: Family Care",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Spillman Technologies, Inc.",
+        "Industry": "Technology: Software",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Morristown-Beard School",
+        "Industry": "Educational Services: School",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "SL Green Realty Corp",
+        "Industry": "Real Estate: Investment Trust",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "SiteHawk",
+        "Industry": "Information Services: Technology",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Gamestop",
+        "Industry": "Retail: Other",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "GVW Group",
+        "Industry": "Finance: Venture Capital",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "C. R. Bard, Inc.",
+        "Industry": "Healthcare: Medical Devices",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "LabCorp",
+        "Industry": "Healthcare: Laboratory Testing",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "JACK Entertainment LLC",
+        "Industry": "Hospitality: Casinos",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Remy Cointreau USA, Inc.",
+        "Industry": "Consumer Packaged Goods: Beverages",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Northwestern Memorial Healthcare Corporation",
+        "Industry": "Healthcare: Hospitals & Clinics",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "ChowNow",
+        "Industry": "Technology: Consumer Internet",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Aeroflow Healthcare",
+        "Industry": "Healthcare: Medical Devices",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "The Ohio State University",
+        "Industry": "Educational Services: College & University",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Dia&Co",
+        "Industry": "Retail: Shoes, Accessories and Apparel",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Colorado School of Mines",
+        "Industry": "Educational Services: College & University",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "University of Memphis",
+        "Industry": "Educational Services: College & University",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Polytechnic Institute of New York University",
+        "Industry": "Educational Services: College & University",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Stevens Institute of Technology",
+        "Industry": "Educational Services: College & University",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "Austin Peay State University",
+        "Industry": "Educational Services: College & University",
+        "MaternityLeave": "6"
+    }, {
+        "Company": "NPD Group",
+        "Industry": "Advertising: Market Research",
+        "MaternityLeave": "5"
+    }, {
+        "Company": "Lowes Companies",
+        "Industry": "Retail: General Merchandise",
+        "MaternityLeave": "5"
+    }, {
+        "Company": "Arrow Electronics, Inc.",
+        "Industry": "Electronics: Wholesaler",
+        "MaternityLeave": "5"
+    }, {
+        "Company": "Berkshire Hathaway",
+        "Industry": "Conglomerate",
+        "MaternityLeave": "5"
+    }, {
+        "Company": "Best Buy Co., Inc.",
+        "Industry": "Retail: Electronics",
+        "MaternityLeave": "5"
+    }, {
+        "Company": "CACI International Inc.",
+        "Industry": "Technology: B2B Tech Services",
+        "MaternityLeave": "5"
+    }, {
+        "Company": "Darden Restaurants, Inc.",
+        "Industry": "Hospitality: Restaurants",
+        "MaternityLeave": "5"
+    }, {
+        "Company": "Northrop Grumman Corporation",
+        "Industry": "Defense & Space",
+        "MaternityLeave": "5"
+    }, {
+        "Company": "Raytheon Company",
+        "Industry": "Technology: Security",
+        "MaternityLeave": "5"
+    }, {
+        "Company": "Anthem, Inc.",
+        "Industry": "Insurance: Health",
+        "MaternityLeave": "5"
+    }, {
+        "Company": "Websense",
+        "Industry": "Technology: Security",
+        "MaternityLeave": "5"
+    }, {
+        "Company": "CNA Financial",
+        "Industry": "Insurance: Property & Casualty",
+        "MaternityLeave": "5"
+    }, {
+        "Company": "New Hampshire DHHS",
+        "Industry": "Government: State",
+        "MaternityLeave": "5"
+    }, {
+        "Company": "Homeyer Consulting Services, Inc.",
+        "Industry": "Natural Resources: Chemicals",
+        "MaternityLeave": "5"
+    }, {
+        "Company": "Straumann Group",
+        "Industry": "Healthcare: Medical Devices",
+        "MaternityLeave": "5"
+    }, {
+        "Company": "Bank of the West",
+        "Industry": "Finance: Personal & Commercial Banking",
+        "MaternityLeave": "5"
+    }, {
+        "Company": "Banfield Pet Hospital",
+        "Industry": "Healthcare: Animal Health",
+        "MaternityLeave": "5"
+    }, {
+        "Company": "Baptist Health South Florida",
+        "Industry": "Healthcare: Hospitals & Clinics",
+        "MaternityLeave": "5"
+    }, {
+        "Company": "1-800-GOT-JUNK?",
+        "Industry": "Services: Waste Management",
+        "MaternityLeave": "5"
+    }, {
+        "Company": "Ferguson Enterprises Inc",
+        "Industry": "Wholesale",
+        "MaternityLeave": "5"
+    }, {
+        "Company": "BAYADA",
+        "Industry": "Healthcare: Family Care",
+        "MaternityLeave": "5"
+    }, {
+        "Company": "Mount San Jacinto College",
+        "Industry": "Educational Services: College & University",
+        "MaternityLeave": "5"
+    }, {
+        "Company": "PC Connection",
+        "Industry": "Technology: B2B Tech Services",
+        "MaternityLeave": "5"
+    }, {
+        "Company": "The Aspen Institute",
+        "Industry": "Nonprofit: Public Policy",
+        "MaternityLeave": "5"
+    }, {
+        "Company": "The Jackson Laboratory",
+        "Industry": "Healthcare: Biotechnology",
+        "MaternityLeave": "5"
+    }, {
+        "Company": "AmTrust North America",
+        "Industry": "Insurance: Property & Casualty",
+        "MaternityLeave": "5"
+    }, {
+        "Company": "Drayer Physical Therapy Institute, LLC",
+        "Industry": "Healthcare: Hospitals & Clinics",
+        "MaternityLeave": "5"
+    }, {
+        "Company": "Ansira",
+        "Industry": "Advertising",
+        "MaternityLeave": "5"
+    }, {
+        "Company": "Meredith Corporation",
+        "Industry": "Media: Diversified",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "Cargill",
+        "Industry": "Natural Resources: Agriculture and Food",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "Black Mountain Systems",
+        "Industry": "Technology: Software",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "American Electric Power Company, Inc.",
+        "Industry": "Natural Resources: Electric Power Generation",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "Cemex",
+        "Industry": "Industrial: Building Materials Manufacturing",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "CVS Health",
+        "Industry": "Pharmacies & Drug Stores",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "Humana Inc.",
+        "Industry": "Insurance: Health",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "Johnson Controls, Inc.",
+        "Industry": "Automotive: Parts Manufacturing",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "Nokia",
+        "Industry": "Telecommunications",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "Ralph Lauren",
+        "Industry": "Retail: Shoes, Accessories and Apparel",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "Saks Fifth Avenue",
+        "Industry": "Retail: Department Store",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "Supervalu Inc.",
+        "Industry": "Retail: Supermarket Company",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "Winn Dixie",
+        "Industry": "Retail: Supermarket Company",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "New Relic",
+        "Industry": "Technology: Software",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "Protiviti",
+        "Industry": "Consulting Services",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "Massachusetts General Hospital",
+        "Industry": "Healthcare: Hospitals & Clinics",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "Varian Medical Systems",
+        "Industry": "Healthcare: Medical Devices",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "Avvo",
+        "Industry": "Technology: Consumer Internet",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "APS Healthcare, Inc",
+        "Industry": "Healthcare: Behavioral",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "Association of American Medical Colleges",
+        "Industry": "Nonprofit: Medical",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "Sinai Health System",
+        "Industry": "Healthcare: Hospitals & Clinics",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "Sensata",
+        "Industry": "Electronics: Manufacturing",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "Discovery Education",
+        "Industry": "Educational Services: E-Learning",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "Volusion",
+        "Industry": "Technology: Consumer Internet",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "Burns & McDonnell",
+        "Industry": "Industrial: Engineering",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "Penguin Random House",
+        "Industry": "Publishing",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "Bio-Rad Laboratories",
+        "Industry": "Healthcare: Biotechnology",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "NC State University",
+        "Industry": "Educational Services: College & University",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "Sunday River Skiway",
+        "Industry": "Hospitality: Resorts",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "Moffitt Cancer Center",
+        "Industry": "Healthcare: Hospitals & Clinics",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "Triage Consulting Group",
+        "Industry": "Healthcare: Services",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "Brookings Institution",
+        "Industry": "Nonprofit: Public Policy",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "VSA Partners",
+        "Industry": "Advertising",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "Benefitfocus",
+        "Industry": "Technology: Software",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "Rochester Institute of Technology",
+        "Industry": "Educational Services: College & University",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "City of Cincinnati, Ohio",
+        "Industry": "Government: City",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "Keen",
+        "Industry": "Retail: Shoes, Accessories and Apparel",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "Armstrong World Industries",
+        "Industry": "Industrial: Building Materials Manufacturing",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "GovDelivery",
+        "Industry": "Technology: Consumer Internet",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "American Institutes for Research",
+        "Industry": "Nonprofit: Research",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "Galvanize",
+        "Industry": "Educational Services: Professional Training",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "Cincinnati Childrens Hospital Medical Center",
+        "Industry": "Healthcare: Hospitals & Clinics",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "Lookout, Inc.",
+        "Industry": "Technology: Security",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "Snyders-Lance",
+        "Industry": "Consumer Packaged Goods: Packaged Foods",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "Adventist Health System",
+        "Industry": "Healthcare: Hospitals & Clinics",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "Major League Baseball",
+        "Industry": "Sports",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "Creighton University",
+        "Industry": "Educational Services: College & University",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "Buffalo Wild Wings",
+        "Industry": "Hospitality: Restaurants",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "LawNY",
+        "Industry": "Nonprofit: Legal",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "The University of Alabama at Birmingham",
+        "Industry": "Educational Services: College & University",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "Checkers and Rallys",
+        "Industry": "Hospitality: Restaurants",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "Evergage",
+        "Industry": "Technology: Software",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "Mercury Network, LLC",
+        "Industry": "Technology: Software",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "Carters, Inc.",
+        "Industry": "Retail: Baby products",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "Ulta Beauty, Inc.",
+        "Industry": "Retail: Other",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "Port of Seattle",
+        "Industry": "Maritime",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "Bristow Helicopters",
+        "Industry": "Aerospace",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "HSN, Inc.",
+        "Industry": "Retail: Online",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "Epipheo",
+        "Industry": "Arts & Entertainment",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "Relias Learning",
+        "Industry": "Educational Services: E-Learning",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "Dell Technologies",
+        "Industry": "Technology: Manufacturing",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "Resource Systems Group",
+        "Industry": "Consulting Services",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "CareCloud",
+        "Industry": "Information Services: Technology",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "Sovrn Holdings",
+        "Industry": "Business Services: Technology Solutions",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "Tigerspike",
+        "Industry": "Information Services: Technology",
+        "MaternityLeave": "4"
+    }, {
+        "Company": "United States Department of State",
+        "Industry": "Government: Federal",
+        "MaternityLeave": "3"
+    }, {
+        "Company": "Parexel",
+        "Industry": "Pharmaceutical",
+        "MaternityLeave": "3"
+    }, {
+        "Company": "Assurant, Inc.",
+        "Industry": "Insurance: Property & Casualty",
+        "MaternityLeave": "3"
+    }, {
+        "Company": "Ball Corporation",
+        "Industry": "Industrial: Materials",
+        "MaternityLeave": "3"
+    }, {
+        "Company": "Boeing",
+        "Industry": "Aerospace",
+        "MaternityLeave": "3"
+    }, {
+        "Company": "Capgemini",
+        "Industry": "Consulting Services",
+        "MaternityLeave": "3"
+    }, {
+        "Company": "ManpowerGroup Inc.",
+        "Industry": "Business Services: Staffing & Outsourcing",
+        "MaternityLeave": "3"
+    }, {
+        "Company": "Massachusetts Mutual Life Insurance Company",
+        "Industry": "Insurance: Life",
+        "MaternityLeave": "3"
+    }, {
+        "Company": "Ogilvy & Mather",
+        "Industry": "Advertising",
+        "MaternityLeave": "3"
+    }, {
+        "Company": "Qualcomm Incorporated",
+        "Industry": "Telecommunications",
+        "MaternityLeave": "3"
+    }, {
+        "Company": "R.R. Donnelley & Sons Company",
+        "Industry": "Printing",
+        "MaternityLeave": "3"
+    }, {
+        "Company": "Robert Half International",
+        "Industry": "Business Services: Staffing & Outsourcing",
+        "MaternityLeave": "3"
+    }, {
+        "Company": "Seward & Kissel LLP",
+        "Industry": "Law Firm",
+        "MaternityLeave": "3"
+    }, {
+        "Company": "Siemens",
+        "Industry": "Conglomerate",
+        "MaternityLeave": "3"
+    }, {
+        "Company": "Staples, Inc.",
+        "Industry": "Retail: Stationary & Office Supplies",
+        "MaternityLeave": "3"
+    }, {
+        "Company": "Neustar, Inc.",
+        "Industry": "Technology: B2B Tech Services",
+        "MaternityLeave": "3"
+    }, {
+        "Company": "Haymarket Media Group",
+        "Industry": "Publishing",
+        "MaternityLeave": "3"
+    }, {
+        "Company": "SanDisk",
+        "Industry": "Technology: Manufacturing",
+        "MaternityLeave": "3"
+    }, {
+        "Company": "Duke Clinical Research Institute",
+        "Industry": "Educational Services: College & University",
+        "MaternityLeave": "3"
+    }, {
+        "Company": "DeVry",
+        "Industry": "Educational Services: College & University",
+        "MaternityLeave": "3"
+    }, {
+        "Company": "Albertsons",
+        "Industry": "Retail: Supermarket Company",
+        "MaternityLeave": "3"
+    }, {
+        "Company": "Rockwell Collins",
+        "Industry": "Aerospace",
+        "MaternityLeave": "3"
+    }, {
+        "Company": "Baylor University",
+        "Industry": "Educational Services: College & University",
+        "MaternityLeave": "3"
+    }, {
+        "Company": "Bloomberg Law",
+        "Industry": "Information Services: Legal",
+        "MaternityLeave": "3"
+    }, {
+        "Company": "WellStar Health System",
+        "Industry": "Healthcare: Hospitals & Clinics",
+        "MaternityLeave": "3"
+    }, {
+        "Company": "Research Square",
+        "Industry": "Educational Services: Management",
+        "MaternityLeave": "3"
+    }, {
+        "Company": "CHI Health",
+        "Industry": "Healthcare: Hospitals & Clinics",
+        "MaternityLeave": "3"
+    }, {
+        "Company": "Sleep Number",
+        "Industry": "Retail: Furniture & Home Improvement",
+        "MaternityLeave": "3"
+    }, {
+        "Company": "Nsight Telservices",
+        "Industry": "Telecommunications",
+        "MaternityLeave": "3"
+    }, {
+        "Company": "Socrata",
+        "Industry": "Technology: B2B Tech Services",
+        "MaternityLeave": "3"
+    }, {
+        "Company": "American Councils for International Education",
+        "Industry": "Nonprofit: Education",
+        "MaternityLeave": "3"
+    }, {
+        "Company": "Sunrise Senior Living",
+        "Industry": "Services: Senior Living",
+        "MaternityLeave": "3"
+    }, {
+        "Company": "CannonDesign",
+        "Industry": "Industrial: Architecture & Design",
+        "MaternityLeave": "3"
+    }, {
+        "Company": "University of Virginia",
+        "Industry": "Educational Services: College & University",
+        "MaternityLeave": "3"
+    }, {
+        "Company": "National Renewable Energy Laboratory",
+        "Industry": "Government: Federal",
+        "MaternityLeave": "3"
+    }, {
+        "Company": "Childrens Museum Of Denver",
+        "Industry": "Nonprofit: Museums",
+        "MaternityLeave": "3"
+    }, {
+        "Company": "Northwell Health",
+        "Industry": "Healthcare: Hospitals & Clinics",
+        "MaternityLeave": "3"
+    }, {
+        "Company": "Capita",
+        "Industry": "Business Services: Staffing & Outsourcing",
+        "MaternityLeave": "3"
+    }, {
+        "Company": "Social Impact",
+        "Industry": "Consulting Services",
+        "MaternityLeave": "3"
+    }, {
+        "Company": "New York City",
+        "Industry": "Government: City",
+        "MaternityLeave": "3"
+    }, {
+        "Company": "Chipotle Mexican Grill",
+        "Industry": "Hospitality: Restaurants",
+        "MaternityLeave": "2"
+    }, {
+        "Company": "Intouch Solutions",
+        "Industry": "Advertising",
+        "MaternityLeave": "2"
+    }, {
+        "Company": "Toys “R” Us, Inc.",
+        "Industry": "Retail: Baby products",
+        "MaternityLeave": "2"
+    }, {
+        "Company": "Gannett",
+        "Industry": "Media: News",
+        "MaternityLeave": "2"
+    }, {
+        "Company": "HCA Healthcare, Inc.",
+        "Industry": "Healthcare: Hospitals & Clinics",
+        "MaternityLeave": "2"
+    }, {
+        "Company": "Jones Lang LaSalle",
+        "Industry": "Real Estate: Development & Management",
+        "MaternityLeave": "2"
+    }, {
+        "Company": "Principal Financial Group",
+        "Industry": "Finance: Asset Management",
+        "MaternityLeave": "2"
+    }, {
+        "Company": "Constant Contact",
+        "Industry": "Advertising",
+        "MaternityLeave": "2"
+    }, {
+        "Company": "AKQA",
+        "Industry": "Advertising",
+        "MaternityLeave": "2"
+    }, {
+        "Company": "Makerbot",
+        "Industry": "Electronics: Manufacturing",
+        "MaternityLeave": "2"
+    }, {
+        "Company": "LeadPages",
+        "Industry": "Technology: Software",
+        "MaternityLeave": "2"
+    }, {
+        "Company": "Under Armour",
+        "Industry": "Retail: Shoes, Accessories and Apparel",
+        "MaternityLeave": "2"
+    }, {
+        "Company": "AEGON",
+        "Industry": "Finance: Diversified",
+        "MaternityLeave": "2"
+    }, {
+        "Company": "Virginia Tech",
+        "Industry": "Educational Services: College & University",
+        "MaternityLeave": "2"
+    }, {
+        "Company": "Big Brothers Big Sisters",
+        "Industry": "Nonprofit: Youth Development",
+        "MaternityLeave": "2"
+    }, {
+        "Company": "Advent Software",
+        "Industry": "Technology: Software",
+        "MaternityLeave": "2"
+    }, {
+        "Company": "CME Group",
+        "Industry": "Finance: Diversified",
+        "MaternityLeave": "2"
+    }, {
+        "Company": "Vanderbilt University",
+        "Industry": "Educational Services: College & University",
+        "MaternityLeave": "2"
+    }, {
+        "Company": "Tulane University",
+        "Industry": "Educational Services: College & University",
+        "MaternityLeave": "2"
+    }, {
+        "Company": "a9",
+        "Industry": "Technology: Software",
+        "MaternityLeave": "2"
+    }, {
+        "Company": "PayScale",
+        "Industry": "Technology: Consumer Internet",
+        "MaternityLeave": "2"
+    }, {
+        "Company": "Tufts University",
+        "Industry": "Educational Services: College & University",
+        "MaternityLeave": "2"
+    }, {
+        "Company": "Care Dimensions",
+        "Industry": "Healthcare: Hospitals & Clinics",
+        "MaternityLeave": "2"
+    }, {
+        "Company": "The State of Massachusetts",
+        "Industry": "Government: State",
+        "MaternityLeave": "2"
+    }, {
+        "Company": "Voith GmbH",
+        "Industry": "Industrial: Equipment Manufacturing",
+        "MaternityLeave": "2"
+    }, {
+        "Company": "Herman Miller",
+        "Industry": "Industrial: Appliances & Furniture",
+        "MaternityLeave": "2"
+    }, {
+        "Company": "Aerotek, Inc.",
+        "Industry": "Business Services: Staffing & Outsourcing",
+        "MaternityLeave": "2"
+    }, {
+        "Company": "One Kings Lane",
+        "Industry": "Retail: Furniture & Home Improvement",
+        "MaternityLeave": "2"
+    }, {
+        "Company": "GfK",
+        "Industry": "Advertising: Market Research",
+        "MaternityLeave": "2"
+    }, {
+        "Company": "TechTarget",
+        "Industry": "Technology: B2B Tech Services",
+        "MaternityLeave": "2"
+    }, {
+        "Company": "UBM plc",
+        "Industry": "Business Services: Business Events",
+        "MaternityLeave": "2"
+    }, {
+        "Company": "GrubHub",
+        "Industry": "Technology: Consumer Internet",
+        "MaternityLeave": "2"
+    }, {
+        "Company": "Strayer University",
+        "Industry": "Educational Services: College & University",
+        "MaternityLeave": "2"
+    }, {
+        "Company": "QVC",
+        "Industry": "Retail: Online",
+        "MaternityLeave": "2"
+    }, {
+        "Company": "Orbital ATK",
+        "Industry": "Defense & Space",
+        "MaternityLeave": "2"
+    }, {
+        "Company": "Cutters Studios",
+        "Industry": "Design",
+        "MaternityLeave": "2"
+    }, {
+        "Company": "Logic Supply",
+        "Industry": "Technology: Manufacturing",
+        "MaternityLeave": "2"
+    }, {
+        "Company": "University of Illinois at Chicago",
+        "Industry": "Educational Services: College & University",
+        "MaternityLeave": "2"
+    }, {
+        "Company": "William Morris Endeavor",
+        "Industry": "Arts & Entertainment",
+        "MaternityLeave": "2"
+    }, {
+        "Company": "Institute for Sustainable Communities",
+        "Industry": "Nonprofit: Civic & Social",
+        "MaternityLeave": "2"
+    }, {
+        "Company": "SolarWinds",
+        "Industry": "Technology: Software",
+        "MaternityLeave": "2"
+    }, {
+        "Company": "Handpick, Inc.",
+        "Industry": "Technology: Consumer Internet",
+        "MaternityLeave": "2"
+    }, {
+        "Company": "The World Economic Forum",
+        "Industry": "Nonprofit: Political Organization",
+        "MaternityLeave": "2"
+    }, {
+        "Company": "McGaw Medical Center",
+        "Industry": "Healthcare: Hospitals & Clinics",
+        "MaternityLeave": "2"
+    }, {
+        "Company": "SpotX",
+        "Industry": "Information Services: Technology",
+        "MaternityLeave": "2"
+    }, {
+        "Company": "Zimmer Biomet Holdings, Inc.",
+        "Industry": "Healthcare: Medical Devices",
+        "MaternityLeave": "2"
+    }, {
+        "Company": "Girl Scouts Nations Capital",
+        "Industry": "Nonprofit: Civic & Social",
+        "MaternityLeave": "2"
+    }, {
+        "Company": "University of Illinois at Urbana–Champaign",
+        "Industry": "Educational Services: College & University",
+        "MaternityLeave": "2"
+    }, {
+        "Company": "Cardinal Health",
+        "Industry": "Pharmaceutical",
+        "MaternityLeave": "1"
+    }, {
+        "Company": "Ketchum",
+        "Industry": "Public Relations",
+        "MaternityLeave": "1"
+    }, {
+        "Company": "Martha Stewart Living Omnimedia",
+        "Industry": "Media: Diversified",
+        "MaternityLeave": "1"
+    }, {
+        "Company": "Princeton Review",
+        "Industry": "Educational Services: Management",
+        "MaternityLeave": "1"
+    }, {
+        "Company": "TGI Fridays",
+        "Industry": "Hospitality: Restaurants",
+        "MaternityLeave": "1"
+    }, {
+        "Company": "Schoolzilla",
+        "Industry": "Technology: B2B Tech Services",
+        "MaternityLeave": "1"
+    }, {
+        "Company": "Equinix Inc",
+        "Industry": "Technology: B2B Tech Services",
+        "MaternityLeave": "1"
+    }, {
+        "Company": "HTC Corporation",
+        "Industry": "Technology: Manufacturing",
+        "MaternityLeave": "1"
+    }, {
+        "Company": "IISD",
+        "Industry": "Nonprofit: Public Policy",
+        "MaternityLeave": "1"
+    }, {
+        "Company": "Alaska Airlines",
+        "Industry": "Transportation: Passenger Air",
+        "MaternityLeave": "1"
+    }, {
+        "Company": "Oregon State University",
+        "Industry": "Educational Services: College & University",
+        "MaternityLeave": "1"
+    }, {
+        "Company": "CubeSmart",
+        "Industry": "Real Estate: Other",
+        "MaternityLeave": "1"
+    }, {
+        "Company": "Bluebeam Software, Inc.",
+        "Industry": "Technology: Software",
+        "MaternityLeave": "1"
+    }, {
+        "Company": "Carlson Wagonlit Travel",
+        "Industry": "Leisure, Travel & Tourism",
+        "MaternityLeave": "1"
+    }, {
+        "Company": "Harrison and Star",
+        "Industry": "Advertising",
+        "MaternityLeave": "1"
+    }, {
+        "Company": "U.S. Department of Veterans Affairs",
+        "Industry": "Government: Federal",
+        "MaternityLeave": "1"
+    }, {
+        "Company": "Childrens Healthcare of Atlanta",
+        "Industry": "Healthcare: Hospitals & Clinics",
+        "MaternityLeave": "1"
+    }, {
+        "Company": "Coupa",
+        "Industry": "Technology: Software",
+        "MaternityLeave": "1"
+    }, {
+        "Company": "Loblaw Companies Limited",
+        "Industry": "Retail: Supermarket Company",
+        "MaternityLeave": "1"
+    }, {
+        "Company": "Benco Dental",
+        "Industry": "Healthcare: Medical Devices",
+        "MaternityLeave": "1"
+    }, {
+        "Company": "TBWA\\CHIAT\\DAY",
+        "Industry": "Advertising",
+        "MaternityLeave": "1"
+    }, {
+        "Company": "Olympus Corporation",
+        "Industry": "Healthcare: Medical Devices",
+        "MaternityLeave": "1"
+    }, {
+        "Company": "University of Connecticut",
+        "Industry": "Educational Services: College & University",
+        "MaternityLeave": "1"
+    }, {
+        "Company": "Omnicom Media Group",
+        "Industry": "Advertising",
+        "MaternityLeave": "1"
+    }, {
+        "Company": "Association Management Center",
+        "Industry": "Business Services: Other",
+        "MaternityLeave": "1"
+    }, {
+        "Company": "Wood Group Mustang",
+        "Industry": "Industrial: Engineering",
+        "MaternityLeave": "1"
+    }, {
+        "Company": "Boston Beer Company",
+        "Industry": "Consumer Packaged Goods: Beverages",
+        "MaternityLeave": "1"
+    }, {
+        "Company": "Central Oregon Community College",
+        "Industry": "Educational Services: College & University",
+        "MaternityLeave": "1"
+    }, {
+        "Company": "Axioma, Inc.",
+        "Industry": "Technology: Software",
+        "MaternityLeave": "1"
+    }, {
+        "Company": "Forte Research Systems",
+        "Industry": "Technology: Software",
+        "MaternityLeave": "1"
+    }, {
+        "Company": "Newell Brands",
+        "Industry": "Conglomerate",
+        "MaternityLeave": "1"
+    }, {
+        "Company": "Bon Secours Health System",
+        "Industry": "Healthcare: Hospitals & Clinics",
+        "MaternityLeave": "1"
     }
 ]

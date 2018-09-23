@@ -21,7 +21,6 @@ h1 {
 }
 
 p {
-  text-indent: 20px;
   font-size: 15px;
 }
 
@@ -103,7 +102,8 @@ p {
 }
 
 .average-group .average,
-.larger-percentage-group .larger-percentage {
+.larger-percentage-group .larger-percentage,
+.smaller-percentage-group .smaller-percentage {
   font-size: 150px;
   font-family: 'Noto Serif JP', sans-serif;
   font-weight: 900;
@@ -111,7 +111,8 @@ p {
 }
 
 .average-group .average-subtext,
-.larger-percentage-group .larger-percentage-subtext {
+.larger-percentage-group .larger-percentage-subtext,
+.smaller-percentage-group .smaller-percentage-subtext {
   font-size: 30px;
   color: #ccc;
   text-anchor: middle;

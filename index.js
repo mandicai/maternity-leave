@@ -5,11 +5,12 @@
 // Use text-anchor: middle to center the text.
 // The function ticked controls how the circles and text change position during
 // the force simulation.
-// Harry's, L'Oreal, McDonald's, Christie's, Dunkin' Donuts, Moody's, Saint Michael's College, Cozen O'Connor, Harper's Bazaar,
-// St. Edward's University, Claire's, Land O'Lakes, Inc., Macy's, Inc.
-// Page 78 is where the maternity leave stops
+// St Jude's Hospital, Dillard's, St. Luke's Hospital, Fry's Food & Drug Stores, Angie's List, Dick's Sporting Goods
+// Dave & Buster's, Pick 'n Save, Children's National Health System, Love's, Lowe's Companies, Cincinnati Children's Hospital Medical C...
+// Checkers and Rally's, Carter's, Inc., Snyder's-Lance, Children's Museum Of Denver, Girl Scouts Nation's Capital
+// Children's Healthcare of Atlanta
 // CHART SETUP
-let width = 1000, height = 1000
+let width = 1025, height = 1025
 
 let svg = d3.select('#maternity-bubble-chart')
   .append('svg')
@@ -36,6 +37,7 @@ d3.json('maternity-leave.json').then(data => {
   countryComparisonDisplay()
   annotateDisplay()
   largerPercentageDisplay()
+  smallerPercentageDisplay()
   averageDisplay(data)
 
   function setupSections() {
@@ -61,12 +63,16 @@ d3.json('maternity-leave.json').then(data => {
       showSmaller()
     }
     activateFunctions[7] = function () {
-      showAverage()
+      showSmallerPercentage()
     }
     activateFunctions[8] = function () {
+      showAverage()
+    }
+    activateFunctions[9] = function () {
+      d3.select('.average-group').attr('display', 'none')
     }
 
-    for (var i = 0; i < 9; i++) {
+    for (var i = 0; i < 10; i++) {
       updateFunctions[i] = function () {}
     }
   }
@@ -112,6 +118,7 @@ d3.json('maternity-leave.json').then(data => {
 function setupBubbleChart() {
   d3.select('.average-group').attr('display', 'none')
   d3.select('.larger-percentage-group').attr('display', 'none')
+  d3.select('.smaller-percentage-group').attr('display', 'none')
   d3.select('.maternity-annotation-group').attr('display', 'none')
   d3.selectAll('.maternity-bubble').attr('display', 'initial')
   d3.selectAll('.maternity-circle').attr('r', 0)
@@ -147,8 +154,7 @@ function showLarger() {
     .attr('display', function (d) {
       if (d.MaternityLeave <= 25) {
         return 'none'
-      } else {
-      }
+      } else {}
     })
     .transition().duration(750).attr('opacity', function (d) {
       if (d.MaternityLeave >= 25) {
@@ -157,29 +163,68 @@ function showLarger() {
     })
 }
 
+function showLargerPercentage() {
+  d3.select('.larger-percentage-group').attr('display', 'initial')
+  d3.select('.larger-percentage-group').attr('opacity', '0')
+  d3.select('.larger-percentage-group').transition().duration(750).attr('opacity', '1')
+
+  d3.selectAll('.maternity-bubble')
+    .attr('display', function (d) {
+      if (d.MaternityLeave <= 25) {
+        return 'none'
+      } else {}
+    })
+    .transition().duration(750).attr('opacity', function (d) {
+      if (d.MaternityLeave >= 25) {
+        return 0.3
+      } else {}
+    })
+}
+
 function showSmaller() {
-  d3.selectAll('.maternity-bubble').attr('display', 'initial')
-  d3.select('.average-group').attr('display', 'none')
   d3.select('.larger-percentage-group').attr('display', 'none')
+  d3.select('.smaller-percentage-group').attr('display', 'none')
+
+  d3.selectAll('.maternity-bubble').attr('display', 'initial')
+  d3.selectAll('.maternity-bubble').attr('display', function (d) {
+      if (d.MaternityLeave >= 15) {
+        return 'none'
+      } else {}
+    })
+    .transition().duration(750).attr('opacity', function (d) {
+      if (d.MaternityLeave <= 15) {
+        return 1
+      } else {}
+    })
+}
+
+function showSmallerPercentage() {
+  d3.select('.smaller-percentage-group').attr('display', 'initial')
+  d3.select('.smaller-percentage-group').attr('opacity', '0')
+  d3.select('.smaller-percentage-group').transition().duration(750).attr('opacity', '1')
 
   d3.selectAll('.maternity-bubble')
     .attr('display', function (d) {
       if (d.MaternityLeave >= 15) {
         return 'none'
-      }
+      } else {}
     })
-    .attr('opacity', function (d) {
-      if (d.MaternityLeave >= 25) {
-        return 1
-      }
+    .transition().duration(750).attr('opacity', function (d) {
+      if (d.MaternityLeave <= 15) {
+        return 0.3
+      } else {}
     })
+  
+  d3.select('.average-group').attr('display', 'none')
 }
 
 function showAverage() {
   d3.select('.average-group').attr('display', 'initial')
-  d3.selectAll('.maternity-bubble').attr('display', 'none')
   d3.select('.average-group').attr('opacity', '0')
   d3.select('.average-group').transition().duration(750).attr('opacity', '1')
+
+  d3.selectAll('.maternity-bubble').attr('display', 'none')
+  d3.select('.smaller-percentage-group').attr('display', 'none')
 }
 
 // CHART CREATION
@@ -287,25 +332,6 @@ function chartDisplay(data, industries, color) {
   })
 }
 
-function averageDisplay(data) {
-  let average = calculateAvg(data)
-
-  let g = svg.append('g')
-    .attr('class', 'average-group')
-
-  let groupX = width / 2 - (g.node().getBBox().width / 2)
-
-  g.attr('transform', 'translate(' + groupX + ',' + height / 2 + ')')
-
-  g.append('text')
-    .text(average.toString())
-    .attr('class', 'average')
-
-  g.append('text')
-    .text('Average number weeks paid maternity leave').attr('dy', 50)
-    .attr('class', 'average-subtext')
-}
-
 function countryComparisonDisplay() {
   let circleMargin = 75
 
@@ -409,54 +435,6 @@ function countryComparisonDisplay() {
   countryAnnotationGroup.transition().duration(750).attr('opacity', 1)
 }
 
-function largerPercentageDisplay() {
-  let count = 0
-  let total = 0
-
-  d3.selectAll('.maternity-bubble').attr('opacity', function (d) {
-    total++
-    if (d.MaternityLeave >= 25) {
-      count++
-    }
-  })
-
-  let percentage = Math.round(count / total * 100 * 10) / 10
-
-  let g = svg.append('g')
-    .attr('class', 'larger-percentage-group')
-
-  let groupX = width / 2 - (g.node().getBBox().width / 2)
-
-  g.attr('transform', 'translate(' + groupX + ',' + height / 2 + ')')
-
-  g.append('text')
-    .text(percentage.toString() + '%')
-    .attr('class', 'larger-percentage')
-
-  g.append('text')
-    .text('Percentage offering 25 weeks or more paid maternity leave').attr('dy', 50)
-    .attr('class', 'larger-percentage-subtext')
-}
-
-function showLargerPercentage() {
-  d3.select('.larger-percentage-group').attr('display', 'initial')
-  d3.select('.larger-percentage-group').attr('opacity', '0')
-  d3.select('.larger-percentage-group').transition().duration(750).attr('opacity', '1')
-
-  d3.selectAll('.maternity-bubble')
-    .attr('display', function (d) {
-      if (d.MaternityLeave <= 25) {
-        return 'none'
-      } else {}
-    })
-
-  d3.selectAll('.maternity-bubble').attr('opacity', function (d) {
-    if (d.MaternityLeave >= 25) {
-      return 0.5
-    }
-  })
-}
-
 function annotateDisplay() {
   let annotations = [{
       note: {
@@ -496,6 +474,83 @@ function annotateDisplay() {
     .call(makeAnnotations)
 
   annotationGroup.transition().duration(750).attr('opacity', 1)
+}
+
+function largerPercentageDisplay() {
+  let count = 0
+  let total = 0
+
+  d3.selectAll('.maternity-bubble').attr('opacity', function (d) {
+    total++
+    if (d.MaternityLeave >= 25) {
+      count++
+    }
+  })
+
+  let percentage = Math.round(count / total * 100 * 10) / 10
+
+  let g = svg.append('g')
+    .attr('class', 'larger-percentage-group')
+
+  let groupX = width / 2 - (g.node().getBBox().width / 2)
+
+  g.attr('transform', 'translate(' + groupX + ',' + height / 2 + ')')
+
+  g.append('text')
+    .text(percentage.toString() + '%')
+    .attr('class', 'larger-percentage')
+
+  g.append('text')
+    .text('Percentage offering 25 weeks or more paid maternity leave').attr('dy', 50)
+    .attr('class', 'larger-percentage-subtext')
+}
+
+function smallerPercentageDisplay() {
+  let count = 0
+  let total = 0
+
+  d3.selectAll('.maternity-bubble').attr('opacity', function (d) {
+    total++
+    if (d.MaternityLeave <= 15) {
+      count++
+    }
+  })
+
+  let percentage = Math.round(count / total * 100 * 10) / 10
+
+  let g = svg.append('g')
+    .attr('class', 'smaller-percentage-group')
+
+  let groupX = width / 2 - (g.node().getBBox().width / 2)
+
+  g.attr('transform', 'translate(' + groupX + ',' + height / 2 + ')')
+
+  g.append('text')
+    .text(percentage.toString() + '%')
+    .attr('class', 'smaller-percentage')
+
+  g.append('text')
+    .text('Percentage offering 15 weeks or less paid maternity leave').attr('dy', 50)
+    .attr('class', 'smaller-percentage-subtext')
+}
+
+function averageDisplay(data) {
+  let average = calculateAvg(data)
+
+  let g = svg.append('g')
+    .attr('class', 'average-group')
+
+  let groupX = width / 2 - (g.node().getBBox().width / 2)
+
+  g.attr('transform', 'translate(' + groupX + ',' + height / 2 + ')')
+
+  g.append('text')
+    .text(average.toString())
+    .attr('class', 'average')
+
+  g.append('text')
+    .text('Average number weeks paid maternity leave').attr('dy', 50)
+    .attr('class', 'average-subtext')
 }
 
 function calculateAvg(array) {
