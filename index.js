@@ -319,7 +319,6 @@ function chartDisplay(data, industries, color) {
     .style('opacity', 1)
 
   d3.selectAll('.maternity-bubble').on('mouseover', function (d) {
-    d3.select(this).transition().style('opacity', 0.5)
     companyName.text(d.Company)
     companyNumber.text('Maternity Leave: ' + d.MaternityLeave)
     companyIndustry.text('Industry: ' + d.Industry)
@@ -327,7 +326,6 @@ function chartDisplay(data, industries, color) {
   })
 
   d3.selectAll('.maternity-bubble').on('mouseout', function (d) {
-    d3.select(this).transition().style('opacity', 1)
     d3.select('.description').transition().style('opacity', 0)
   })
 }

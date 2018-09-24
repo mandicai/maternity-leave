@@ -61,6 +61,10 @@ p {
   border-radius: 100%;
 }
 
+.maternity-bubble:hover {
+  opacity: 0.5;
+}
+
 .maternity-circle {
   stroke: #cacbcc;
   stroke-width: 0.3;
