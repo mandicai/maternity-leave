@@ -13,6 +13,10 @@ h1 {
   font-size: 40px;
 }
 
+b {
+  color: #ed186f;
+}
+
 .units {
   font-size: 15px;
   border-top: 1px solid black;
@@ -40,23 +44,26 @@ p {
   margin-bottom: 15px;
 }
 
-.last-step {
-  margin-bottom: 75%;
-}
-
 .content {
   position: absolute;
   left: 10%;
   width: 50%;
 }
 
+.diagram circle {
+  fill: #ece8f1;
+  stroke: #cacbcc;
+  stroke-width: 0.3;
+}
+
 #maternity-bubble-chart {
   display: inline-block;
   position: fixed;
-  height: 650px;
-  width: 650px;
+  height: 700px;
+  width: 700px;
   z-index: 1;
-  margin: 5%;
+  margin-left: 3%;
+  margin: 3%;
   border: 2px solid #F1F3F4;
   border-radius: 100%;
 }
@@ -76,17 +83,17 @@ p {
 }
 
 .company-name {
-  font-size: 19px;
+  font-size: 22px;
   font-family: 'Noto Serif JP', sans-serif;
   font-weight: 900;
 }
 
 .company-number {
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .company-industry {
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .annotation path {
@@ -102,7 +109,7 @@ p {
 
 .annotation-note-label {
   fill: #8b8b8c;
-  font-size: 15px;
+  font-size: 17px;
 }
 
 .average-group .average,
@@ -120,4 +127,16 @@ p {
   font-size: 30px;
   color: #ccc;
   text-anchor: middle;
+}
+
+@media only screen and (min-width: 376px) {
+  .last-step {
+    margin-bottom: 35%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .last-step {
+    margin-bottom: 400%;
+  }
 }

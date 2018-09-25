@@ -5,12 +5,9 @@
 // Use text-anchor: middle to center the text.
 // The function ticked controls how the circles and text change position during
 // the force simulation.
-// St Jude's Hospital, Dillard's, St. Luke's Hospital, Fry's Food & Drug Stores, Angie's List, Dick's Sporting Goods
-// Dave & Buster's, Pick 'n Save, Children's National Health System, Love's, Lowe's Companies, Cincinnati Children's Hospital Medical C...
-// Checkers and Rally's, Carter's, Inc., Snyder's-Lance, Children's Museum Of Denver, Girl Scouts Nation's Capital
-// Children's Healthcare of Atlanta
+
 // CHART SETUP
-let width = 1025, height = 1025
+let width = 1150, height = 1150
 
 let svg = d3.select('#maternity-bubble-chart')
   .append('svg')
@@ -25,7 +22,7 @@ d3.json('maternity-leave.json').then(data => {
     }
   })
 
-  let color = d3.scaleSequential(d3.interpolatePuRd).domain([0, industries.length + 2])
+  let color = d3.scaleSequential(d3.interpolatePuRd).domain([0, industries.length])
 
   let lastIndex = -1
   let activeIndex = 0
@@ -272,9 +269,7 @@ function chartDisplay(data, industries, color) {
     })
     .attr('dy', 4)
     .text(function (d) {
-      if (d.MaternityLeave != 0) {
-        return d.MaternityLeave
-      }
+      return d.MaternityLeave
     })
     .attr('class', 'numbers-text')
 
@@ -298,7 +293,7 @@ function chartDisplay(data, industries, color) {
     numbers.exit().remove()
   }
 
-  let descriptionMargin = height - 50
+  let descriptionMargin = height - 60
 
   let g = svg.append('g')
     .attr('transform', 'translate(' + 0 + ',' + descriptionMargin + ')')
@@ -309,12 +304,12 @@ function chartDisplay(data, industries, color) {
     .style('opacity', 1)
 
   let companyNumber = g.append('text')
-    .attr('dy', 20)
+    .attr('dy', 30)
     .attr('class', 'company-number')
     .style('opacity', 1)
 
   let companyIndustry = g.append('text')
-    .attr('dy', 40)
+    .attr('dy', 50)
     .attr('class', 'company-industry')
     .style('opacity', 1)
 
@@ -442,9 +437,9 @@ function annotateDisplay() {
         radius: 52,
       },
       type: d3.annotationCalloutCircle,
-      x: 717.893,
-      y: 419.908,
-      dy: -200,
+      x: 823.605,
+      y: 417.965,
+      dy: -250,
       dx: 200,
     },
     {
@@ -455,9 +450,9 @@ function annotateDisplay() {
         radius: 52,
       },
       type: d3.annotationCalloutCircle,
-      x: 577.964,
-      y: 337.491,
-      dy: -225,
+      x: 545.808,
+      y: 510.599,
+      dy: -350,
       dx: -350,
     }
   ]
@@ -560,4 +555,18 @@ function calculateAvg(array) {
   let average = sum / count
   return Math.round(average * 10) / 10
 }
+
+let diagram = d3.select('#diagram')
+  .append('svg').attr('width', '300px').attr('height', '100px')
+
+let diagramGroup = diagram.append('g').attr('class', 'diagram').attr('transform', 'translate(' + 30 + ',' + 50 + ')')
+
+let diagramCircle = diagramGroup.append('circle')
+  .attr('r', 30)
+
+diagramCircle.append('text')
+  .attr('dy', 4)
+  .text('hi')
+
+diagram.append('g').attr('transform', 'translate(' + 30 + ',' + 50 + ')').append('text').text('Company Name')
 
