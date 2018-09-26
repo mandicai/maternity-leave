@@ -50,6 +50,10 @@ p {
   width: 50%;
 }
 
+.diagram {
+  font-size: 10.5px;
+}
+
 .diagram circle {
   fill: #ece8f1;
   stroke: #cacbcc;

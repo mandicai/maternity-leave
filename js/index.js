@@ -7,14 +7,15 @@
 // the force simulation.
 
 // CHART SETUP
-let width = 1150, height = 1150
+let width = 1150,
+  height = 1150
 
 let svg = d3.select('#maternity-bubble-chart')
   .append('svg')
   .attr('viewBox', '0 0' + ' ' + width + ' ' + height)
 
-d3.json('maternity-leave.json').then(data => {
- let industries = []
+d3.json('data/maternity-leave.json').then(data => {
+  let industries = []
 
   data.forEach(datum => {
     if (!industries.includes(datum.Industry)) {
@@ -47,10 +48,10 @@ d3.json('maternity-leave.json').then(data => {
     activateFunctions[2] = function () {
       setupBubbleChart()
     }
-    activateFunctions[3] = function() { 
+    activateFunctions[3] = function () {
       showAnnotations()
     }
-    activateFunctions[4] = function() { 
+    activateFunctions[4] = function () {
       showLarger()
     }
     activateFunctions[5] = function () {
@@ -211,7 +212,7 @@ function showSmallerPercentage() {
         return 0.3
       } else {}
     })
-  
+
   d3.select('.average-group').attr('display', 'none')
 }
 
@@ -555,18 +556,3 @@ function calculateAvg(array) {
   let average = sum / count
   return Math.round(average * 10) / 10
 }
-
-let diagram = d3.select('#diagram')
-  .append('svg').attr('width', '300px').attr('height', '100px')
-
-let diagramGroup = diagram.append('g').attr('class', 'diagram').attr('transform', 'translate(' + 30 + ',' + 50 + ')')
-
-let diagramCircle = diagramGroup.append('circle')
-  .attr('r', 30)
-
-diagramCircle.append('text')
-  .attr('dy', 4)
-  .text('hi')
-
-diagram.append('g').attr('transform', 'translate(' + 30 + ',' + 50 + ')').append('text').text('Company Name')
-
