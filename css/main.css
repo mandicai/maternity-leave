@@ -10,7 +10,7 @@ h1, h3 {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 35px;
 }
 
 b {
@@ -18,10 +18,12 @@ b {
 }
 
 .units {
+  display: inline-block;
   font-size: 15px;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   padding: 5px;
+  margin-left: 3%;
 }
 
 p {
@@ -42,6 +44,10 @@ p {
 
 .step div {
   margin-bottom: 15px;
+}
+
+.last-step {
+  margin-bottom: 35%;
 }
 
 .content {
@@ -133,13 +139,7 @@ p {
   text-anchor: middle;
 }
 
-@media only screen and (min-width: 376px) {
-  .last-step {
-    margin-bottom: 35%;
-  }
-}
-
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 1100px){
   .last-step {
     margin-bottom: 400%;
   }
