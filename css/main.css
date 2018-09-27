@@ -17,6 +17,10 @@ b {
   color: #ed186f;
 }
 
+a {
+  color: #78439E;
+}
+
 .units {
   display: inline-block;
   font-size: 15px;
@@ -69,8 +73,8 @@ p {
 #maternity-bubble-chart {
   display: inline-block;
   position: fixed;
-  height: 700px;
-  width: 700px;
+  height: 600px;
+  width: 600px;
   z-index: 1;
   margin-left: 3%;
   margin: 3%;
