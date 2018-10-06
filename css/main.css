@@ -145,12 +145,14 @@ p {
   font-family: "Muli", sans-serif;
   float: right;
   border: none;
-  border-bottom: solid 2px #b4b4b5;
+  border-bottom: solid 2px #ece8f1;
   transition: border 0.3s;
 }
 
-#search-text:hover {
-  border-bottom: solid 2px #ed186f;
+#search-text:hover,
+#search-text:focus {
+  outline: none;
+  border-bottom: solid 2px #c597c4;
   transition: border 0.3s;
 }
 
