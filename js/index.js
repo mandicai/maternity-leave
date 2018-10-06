@@ -113,6 +113,8 @@ d3.json('data/maternity-leave.json').then(data => {
   })
 })
 
+let lighterBubbles = false
+
 function setupBubbleChart() {
   d3.select('.average-group').attr('display', 'none')
   d3.select('.larger-percentage-group').attr('display', 'none')
@@ -145,6 +147,8 @@ function showAnnotations() {
 }
 
 function showLarger() {
+  lighterBubbles = false
+
   d3.select('.maternity-annotation-group').attr('display', 'none')
   d3.select('.larger-percentage-group').attr('display', 'none')
 
@@ -162,6 +166,8 @@ function showLarger() {
 }
 
 function showLargerPercentage() {
+  lighterBubbles = true
+
   d3.select('.larger-percentage-group').attr('display', 'initial')
   d3.select('.larger-percentage-group').attr('opacity', '0')
   d3.select('.larger-percentage-group').transition().duration(750).attr('opacity', '1')
@@ -180,6 +186,8 @@ function showLargerPercentage() {
 }
 
 function showSmaller() {
+  lighterBubbles = false
+
   d3.select('.larger-percentage-group').attr('display', 'none')
   d3.select('.smaller-percentage-group').attr('display', 'none')
 
@@ -197,6 +205,8 @@ function showSmaller() {
 }
 
 function showSmallerPercentage() {
+  lighterBubbles = true
+
   d3.select('.smaller-percentage-group').attr('display', 'initial')
   d3.select('.smaller-percentage-group').attr('opacity', '0')
   d3.select('.smaller-percentage-group').transition().duration(750).attr('opacity', '1')
@@ -217,6 +227,8 @@ function showSmallerPercentage() {
 }
 
 function showAverage() {
+  lighterBubbles = false
+
   d3.select('.average-group').attr('display', 'initial')
   d3.select('.average-group').attr('opacity', '0')
   d3.select('.average-group').transition().duration(750).attr('opacity', '1')
@@ -555,4 +567,18 @@ function calculateAvg(array) {
   }
   let average = sum / count
   return Math.round(average * 10) / 10
+}
+
+function search() {
+  let input = document.getElementById('search-text')
+
+  d3.selectAll('.maternity-bubble')
+    .transition()
+    .attr('opacity', function (d) {
+      if (d.Company.toLowerCase().indexOf(input.value.toLowerCase()) !== -1) {
+        if (lighterBubbles) {
+          return 0.3
+        } else { return 1 }
+      } else { return 0.1 }
+    })
 }
