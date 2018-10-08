@@ -62,11 +62,17 @@ d3.json('data/maternity-leave.json').then(data => {
       showSmaller()
     }
     activateFunctions[7] = function () {
+      d3.select('#table').style('display', 'none')
       showSmallerPercentage()
     }
     activateFunctions[8] = function () {
+      d3.select('#table').style('display', 'inline-block')
+      d3.selectAll('.maternity-bubble').attr('display', 'none')
+      d3.select('.smaller-percentage-group').attr('display', 'none')
+      d3.select('.average-group').attr('display', 'none')
     }
     activateFunctions[9] = function () {
+      d3.select('#table').style('display', 'none')
       showAverage()
     }
     activateFunctions[10] = function () {
@@ -236,8 +242,7 @@ function showAverage() {
   d3.select('.average-group').attr('opacity', '0')
   d3.select('.average-group').transition().duration(750).attr('opacity', '1')
 
-  d3.selectAll('.maternity-bubble').attr('display', 'none')
-  d3.select('.smaller-percentage-group').attr('display', 'none')
+  d3.select('#table').attr('display', 'none')
 }
 
 // CHART CREATION
@@ -374,12 +379,12 @@ function tableDisplay() {
 
     d3.select('#table').html('<table>'
             + '<tbody>' +
-            '<tr>' + '<td class="key">' + '50 or more' + '</td>' + '<td class="number">' + sixthInterval + '</td>' + '</tr>' +
-            '<tr>' + '<td class="key">' + '40-49' + '</td>' + '<td class="number">' + fifthInterval + '</td>' + '</tr>' +
-            '<tr>' + '<td class="key">' + '30-39' + '</td>' + '<td class="number">' + fourthInterval + '</td>' + '</tr>' +
-            '<tr>' + '<td class="key">' + '20-29' + '</td>' + '<td class="number">' + thirdInterval + '</td>' + '</tr>' +
-            '<tr>' + '<td class="key">' + '10-19' + '</td>' + '<td class="number">' + secondInterval + '</td>' + '</tr>' +
-            '<tr>' + '<td class="key">' + '0-9' + '</td>' + '<td class="number">' + firstInterval + '</td>' + '</tr>'
+            '<tr>' + '<td class="key">' + '50 or more' + '</td>' + '<td class="number">' + sixthInterval + '</td>' + '<td class="number">' + roundedPercentage(sixthInterval, total).toString() + '%' + '</td>' + '</tr>' +
+            '<tr>' + '<td class="key">' + '40-49' + '</td>' + '<td class="number">' + fifthInterval + '</td>' + '<td class="number">' + roundedPercentage(fifthInterval, total).toString() + '%' + '</td>' + '</tr>' +
+            '<tr>' + '<td class="key">' + '30-39' + '</td>' + '<td class="number">' + fourthInterval + '</td>' + '</td>' + '<td class="number">' + roundedPercentage(fourthInterval, total).toString() + '%' + '</td>' + '</tr>' +
+            '<tr>' + '<td class="key">' + '20-29' + '</td>' + '<td class="number">' + thirdInterval + '</td>' + '</td>' + '<td class="number">' + roundedPercentage(thirdInterval, total).toString() + '%' + '</td>' + '</tr>' +
+            '<tr>' + '<td class="key">' + '10-19' + '</td>' + '<td class="number">' + secondInterval + '</td>' + '</td>' + '<td class="number">' + roundedPercentage(secondInterval, total).toString() + '%' + '</td>' + '</tr>' +
+            '<tr>' + '<td class="key">' + '0-9' + '</td>' + '<td class="number">' + firstInterval + '</td>' + '</td>' + '<td class="number">' + roundedPercentage(firstInterval, total).toString() + '%' + '</td>' + '</tr>'
             + '</tbody>' +
             '</table>')
             .style('display', 'none')
@@ -540,7 +545,7 @@ function largerPercentageDisplay() {
     }
   })
 
-  let percentage = Math.round(count / total * 100 * 10) / 10
+  let percentage = roundedPercentage(count, total)
 
   let g = svg.append('g')
     .attr('class', 'larger-percentage-group')
@@ -569,7 +574,7 @@ function smallerPercentageDisplay() {
     }
   })
 
-  let percentage = Math.round(count / total * 100 * 10) / 10
+  let percentage = roundedPercentage(count, total)
 
   let g = svg.append('g')
     .attr('class', 'smaller-percentage-group')
@@ -614,6 +619,10 @@ function calculateAvg(array) {
   }
   let average = sum / count
   return Math.round(average * 10) / 10
+}
+
+function roundedPercentage(count, total) {
+  return Math.round(count / total * 100 * 10) / 10
 }
 
 function search() {

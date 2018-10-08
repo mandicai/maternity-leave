@@ -130,10 +130,14 @@ p {
   height: 50%;
   width: 50%;
   z-index: 1;
+  margin-top: 15%;
+  margin-left: 12%;
 }
 
 td {
+  width: 100px;
   padding: 12px;
+  border-top: solid 1px #f1f3f4;
 }
 
 td.key {
