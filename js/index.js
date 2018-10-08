@@ -32,6 +32,7 @@ d3.json('data/maternity-leave.json').then(data => {
   let updateFunctions = []
 
   chartDisplay(data, industries, color)
+  tableDisplay()
   countryComparisonDisplay()
   annotateDisplay()
   largerPercentageDisplay()
@@ -64,13 +65,15 @@ d3.json('data/maternity-leave.json').then(data => {
       showSmallerPercentage()
     }
     activateFunctions[8] = function () {
-      showAverage()
     }
     activateFunctions[9] = function () {
+      showAverage()
+    }
+    activateFunctions[10] = function () {
       d3.select('.average-group').attr('display', 'none')
     }
 
-    for (var i = 0; i < 10; i++) {
+    for (var i = 0; i < 11; i++) {
       updateFunctions[i] = function () {}
     }
   }
@@ -336,6 +339,50 @@ function chartDisplay(data, industries, color) {
   d3.selectAll('.maternity-bubble').on('mouseout', function (d) {
     d3.select('.description').transition().style('opacity', 0)
   })
+}
+
+function tableDisplay() {
+    let total = 0,
+      firstInterval = 0,
+      secondInterval = 0,
+      thirdInterval = 0,
+      fourthInterval = 0,
+      fifthInterval = 0,
+      sixthInterval = 0
+
+    d3.selectAll('.maternity-bubble').attr('opacity', function (d) {
+      total++
+      if (d.MaternityLeave >= 0 && d.MaternityLeave <= 9) {
+        firstInterval++
+      }
+      if (d.MaternityLeave >= 10 && d.MaternityLeave <= 19) {
+        secondInterval++
+      }
+      if (d.MaternityLeave >= 20 && d.MaternityLeave <= 29) {
+        thirdInterval++
+      }
+      if (d.MaternityLeave >= 30 && d.MaternityLeave <= 39) {
+        fourthInterval++
+      }
+      if (d.MaternityLeave >= 40 && d.MaternityLeave <= 49) {
+        fifthInterval++
+      }
+      if (d.MaternityLeave >= 50) {
+        sixthInterval++
+      }
+    })
+
+    d3.select('#table').html('<table>'
+            + '<tbody>' +
+            '<tr>' + '<td class="key">' + '50 or more' + '</td>' + '<td class="number">' + sixthInterval + '</td>' + '</tr>' +
+            '<tr>' + '<td class="key">' + '40-49' + '</td>' + '<td class="number">' + fifthInterval + '</td>' + '</tr>' +
+            '<tr>' + '<td class="key">' + '30-39' + '</td>' + '<td class="number">' + fourthInterval + '</td>' + '</tr>' +
+            '<tr>' + '<td class="key">' + '20-29' + '</td>' + '<td class="number">' + thirdInterval + '</td>' + '</tr>' +
+            '<tr>' + '<td class="key">' + '10-19' + '</td>' + '<td class="number">' + secondInterval + '</td>' + '</tr>' +
+            '<tr>' + '<td class="key">' + '0-9' + '</td>' + '<td class="number">' + firstInterval + '</td>' + '</tr>'
+            + '</tbody>' +
+            '</table>')
+            .style('display', 'none')
 }
 
 function countryComparisonDisplay() {

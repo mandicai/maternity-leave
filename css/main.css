@@ -77,7 +77,7 @@ p {
   width: 50%;
   z-index: 1;
   margin-left: 3%;
-  margin: 3%;
+  margin: 2%;
 }
 
 .maternity-bubble:hover {
@@ -122,6 +122,27 @@ p {
 .annotation-note-label {
   fill: #8b8b8c;
   font-size: 17px;
+}
+
+#table {
+  display: inline-block;
+  position: fixed;
+  height: 50%;
+  width: 50%;
+  z-index: 1;
+}
+
+td {
+  padding: 12px;
+}
+
+td.key {
+  text-align: left;
+  font-weight: 700;
+}
+
+td.number {
+  text-align: right;
 }
 
 .average-group .average,
