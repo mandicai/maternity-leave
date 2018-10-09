@@ -320,35 +320,42 @@ function chartDisplay (data, industries, color) {
     numbers.exit().remove()
   }
 
-  let descriptionMargin = height - 60
+  // let descriptionMargin = height - 60
 
-  let g = svg.append('g')
-    .attr('transform', 'translate(' + 0 + ',' + descriptionMargin + ')')
-    .attr('class', 'description')
+  // let g = svg.append('g')
+  //   .attr('transform', 'translate(' + 0 + ',' + descriptionMargin + ')')
+  //   .attr('class', 'description')
 
-  let companyName = g.append('text')
-    .attr('class', 'company-name')
-    .style('opacity', 1)
+  // let companyName = g.append('text')
+  //   .attr('class', 'company-name')
+  //   .style('opacity', 1)
 
-  let companyNumber = g.append('text')
-    .attr('dy', 30)
-    .attr('class', 'company-number')
-    .style('opacity', 1)
+  // let companyNumber = g.append('text')
+  //   .attr('dy', 30)
+  //   .attr('class', 'company-number')
+  //   .style('opacity', 1)
 
-  let companyIndustry = g.append('text')
-    .attr('dy', 50)
-    .attr('class', 'company-industry')
-    .style('opacity', 1)
+  // let companyIndustry = g.append('text')
+  //   .attr('dy', 50)
+  //   .attr('class', 'company-industry')
+  //   .style('opacity', 1)
 
-  d3.selectAll('.maternity-bubble').on('mouseover', function (d) {
-    companyName.text(d.Company)
-    companyNumber.text('Maternity Leave: ' + d.MaternityLeave + ' weeks')
-    companyIndustry.text('Industry: ' + d.Industry)
-    d3.select('.description').transition().style('opacity', 1)
+  d3.selectAll('.maternity-bubble').on('mousemove', function (d) {
+    d3.select('#tooltip').style('display', 'initial')
+    d3.select('#tooltip').html('<div class="company">' + d.Company + '</div>' + 
+      '<div>' + d.MaternityLeave + ' weeks' + '</div>' +
+      '<div>' + d.Industry + '</div>')
+      .style('left', (d3.event.pageX) + 'px').style('top', (d3.event.pageY) + 'px')
+
+    // companyName.text(d.Company)
+    // companyNumber.text('Maternity Leave: ' + d.MaternityLeave + ' weeks')
+    // companyIndustry.text('Industry: ' + d.Industry)
+    // d3.select('.description').transition().style('opacity', 1)
   })
 
   d3.selectAll('.maternity-bubble').on('mouseout', function (d) {
-    d3.select('.description').transition().style('opacity', 0)
+    // d3.select('.description').transition().style('opacity', 0)
+    d3.select('#tooltip').style('display', 'none')
   })
 }
 

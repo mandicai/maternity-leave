@@ -73,11 +73,32 @@ p {
 #maternity-bubble-chart {
   display: inline-block;
   position: fixed;
-  height: 50%;
-  width: 50%;
+  height: 45%;
+  width: 45%;
   z-index: 1;
   margin-left: 3%;
   margin: 2%;
+}
+
+#tooltip {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  width: 12%;
+  min-height: 50px;
+  padding: 10px;
+  font-size: 12px;
+  background: #fff;
+  pointer-events: none;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+  opacity: 0.9;
+}
+
+#tooltip .company {
+  font-family: 'Noto Serif JP', sans-serif;
+  font-size: 14px;
+  margin-bottom: 5px;
+  font-weight: 700;
 }
 
 .maternity-bubble:hover {
