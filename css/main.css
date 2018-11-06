@@ -13,6 +13,10 @@ h1 {
   font-size: 35px;
 }
 
+.title-color {
+  color: #ed186f;
+}
+
 b {
   color: #ed186f;
 }
@@ -21,7 +25,7 @@ a {
   color: #78439E;
 }
 
-.units {
+.author {
   display: inline-block;
   font-size: 15px;
   border-top: 1px solid black;
@@ -58,16 +62,6 @@ p {
   position: absolute;
   left: 9%;
   width: 50%;
-}
-
-.diagram {
-  font-size: 10.5px;
-}
-
-.diagram circle {
-  fill: #ece8f1;
-  stroke: #cacbcc;
-  stroke-width: 0.3;
 }
 
 #maternity-bubble-chart {
@@ -107,7 +101,7 @@ p {
 
 .maternity-circle {
   stroke: #cacbcc;
-  stroke-width: 0.3;
+  stroke-width: 1;
 }
 
 .numbers-text {
