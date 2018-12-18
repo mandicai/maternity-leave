@@ -197,12 +197,14 @@ td.number {
   transition: border 0.3s;
 }
 
-footer {
-  margin-bottom: 20%;
+@media only screen and (min-width: 1101px) {
+  footer {
+    margin-bottom: 20%;
+  }
 }
 
-/* @media only screen and (max-width: 1100px){
-  .last-step {
-    margin-bottom: 400%;
+@media only screen and (max-width: 1100px){
+  footer {
+    margin-bottom: 300%;
   }
-} */
+}
