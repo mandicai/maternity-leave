@@ -1,12 +1,10 @@
 body {
   font-family: "Muli", sans-serif;
-  font-weight: 100;
   width: 100%;
 }
 
 h1, h3 {
   font-family: 'Noto Serif JP', sans-serif;
-  font-weight: 900;
 }
 
 h1 {
@@ -103,7 +101,6 @@ p {
   font-family: 'Noto Serif JP', sans-serif;
   font-size: 14px;
   margin-bottom: 5px;
-  font-weight: 700;
 }
 
 .maternity-bubble:hover {
@@ -123,7 +120,6 @@ p {
 .company-name {
   font-size: 22px;
   font-family: 'Noto Serif JP', sans-serif;
-  font-weight: 900;
 }
 
 .company-number {
@@ -168,7 +164,6 @@ td {
 
 td.key {
   text-align: left;
-  font-weight: 700;
 }
 
 td.number {
@@ -181,7 +176,6 @@ td.number {
 .smaller-percentage-group .smaller-percentage {
   font-size: 150px;
   font-family: 'Noto Serif JP', sans-serif;
-  font-weight: 900;
   text-anchor: middle;
 }
 
