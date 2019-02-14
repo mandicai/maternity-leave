@@ -8,6 +8,7 @@
   <meta name="twitter:title" content="Currently, the United States is the only developed nation that has no federal policy for paid maternity leave.">
   <link rel="stylesheet" rel="preconnect" href="https://fonts.googleapis.com/css?family=Muli" crossorigin>
   <link rel="stylesheet" rel="preconnect" href="https://fonts.googleapis.com/css?family=Noto+Serif+JP">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.css">
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122616818-3"></script>
@@ -23,72 +24,102 @@
 <body>
   <div id="tooltip"></div>
   <div class="content">
-    <div id="sections">
-      <section class="step">
-        <h1><span class="title-color">Maternity Leave</span> in the US<span class="author">By Mandi Cai</span></h1>
-        <p>Currently, the United States is the only developed nation that has no federal policy for paid maternity leave.</p>
-      </section>
-      <section class="step">
-        <h3>Which nations have federally mandated maternity leave policies?</h3>
-        <p>Norway, Estonia, Finland, Denmark, and Belgium implement some of the most generous policies in the world.</p>
-        <p>In a study organized by the Organization for Economic Cooperation and Development (OECD), data was collected on 41 countries, including the United States,
-          on federally mandated maternity leave. The United State was and is the <b>only developed country</b> that does not dictate any paid leave for new parents.</p>
-      </section>
-      <section class="step">
-        <h3>New mothers must rely on their employers</h3>
-        <p>As a result, many new mothers in the US must rely heavily on their employers to grant them paid maternity leave and benefits.</p>
-        <p>This bubble chart visualizes <b>maternity leave in weeks</b> for <b>1,853</b> companies, educational institutions, and nonprofits. The data was compiled by Fairygodboss, an online platform for sharing reviews about companies by women, for women.</p>
-      </section>
-      <section class="step">
-        <p><b>Netflix</b> and the <b>Bill and Melinda Gates Foundation</b> offer the longest paid maternity leaves among this subset,
-        at 52 weeks each.</p>
-      </section>
-      <section class="step">
-        <p>On the higher end of the spectrum, some companies offer <b>25</b> weeks of paid maternity leave or more.</p>
-      </section>
-      <section class="step">
-        <p>From the employers represented, around <b>0.9%</b> provide their employees with <b>25</b> weeks or more of paid maternity leave.</p>
-      </section>
-      <section class="step">
-        <p>On the lower end of the spectrum, some companies allow less than <b>15</b> weeks of paid maternity leave, which is less than Belgium's federal policy.</p>
-        <p>Several companies, i.e. <b>Princeton Review</b> and <b>TGI Fridays</b>, allow only 1 week of paid maternity leave.</p>
-        <p>There are also several institutions, represented by 0's, that do not offer any paid maternity leave.</p>
-        <p><b>This is especially a problem for single working mothers.</b></p>
-      </section>
-      <section class="step">
-        <p>Approximately <b>85.2</b> percent offer <b>15</b> weeks or less of paid maternity leave.</p>
-      </section>
-      <section class="step">
-        <p>A majority (<b>60.3%</b>) fall in the 0-9 weeks range.</p>
-      </section>
-      <section class="step">
-        <p>The average maternity leave duration for reported employers is <b>8.2 weeks</b>, according to the dataset provided
-        by Fairygodboss.</p>
-      </section>
-      <section class="step last-step">
-        <h3>Sources:</h3>
-        <div><a href="https://fairygodboss.com/maternity-leave-resource-center">Fairygodboss</a></div>
-        <div><a href="http://www.pewresearch.org/fact-tank/2016/09/26/u-s-lacks-mandated-paid-parental-leave/">Among 41 nations, U.S. is the outlier when it comes to paid parental leave</a></div>
-        <div><a href="https://www.glassdoor.com/blog/best-parental-leave-policies/">Glassdoor: 15 Companies With The Best Parental Leave Policies</a></div>
-        <div><a href="https://data.guttmacher.org/regions">Guttmacher Institute Data Center</a></div>
-        <div><a href="https://iwpr.org/wp-content/uploads/wpallimport/files/iwpr-export/publications/B334-Paid%20Parental%20Leave%20in%20the%20United%20States.pdf">Paid Parental Leave in the United States: What the data tell
-        us about access, usage, and economic and health benefits</a></div>
-        <div><a href="https://www.workingmother.com/sites/workingmother.com/files/attachments/2017/09/100best-chart-finalv3.pdf">Working Mothers 100 Best Companies 2017</a></div>
-        <div><a href="https://www.businessinsider.com/countries-with-best-parental-leave-2016-8">These 10 countries have the best parental leave policies in the world</a></div>
-        <br><br>
-        <div>This was featured as a favorite in the <a href="https://pudding.cool/process/pudding-awards-2018/">2018 Pudding Cup</a>, hosted by <a href="https://pudding.cool/">The Pudding</a>.</div>
-        <div>The full set of data can be found in the Maternity Leave Resource Center on <a href="https://fairygodboss.com/maternity-leave-resource-center">Fairygodboss</a>.</div>
-        <div>Special thank you to Jim Valladingham for his <a href="http://vallandingham.me/scroller.html">scroll tutorial</a>, and to Susie Lu for her <a href="http://d3-annotation.susielu.com/">d3-annotation</a> library.</div>
-        <div>More of my work <a href="http://mandilicai.com/">here</a>.</div>
-      </section>
-    </div>
-    <table id="table">
-    </table>
-    <div id="maternity-bubble-chart">
-      <input type="text" id="search-text" placeholder="Search an employer" onkeyup="search()">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6">
+          <table id="table">
+          </table>
+          <div id="maternity-bubble-chart">
+            <input type="text" id="search-text" placeholder="Search an employer" onkeyup="search()">
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <div id="sections">
+            <section class="step">
+              <div class="header">
+                <h1><span class="title-color">Maternity Leave</span> in the US<span class="author">By Mandi Cai</span></h1>
+              </div>
+              <p>Currently, the United States is the only developed nation that has no federal policy for paid maternity leave.</p>
+            </section>
+            <section class="step">
+              <h3>Which nations have federally mandated maternity leave policies?</h3>
+              <p>Norway, Estonia, Finland, Denmark, and Belgium implement some of the most generous policies in the world.</p>
+              <p>In a study organized by the Organization for Economic Cooperation and Development (OECD), data was collected on
+                41 countries, including the United States,
+                on federally mandated maternity leave. The United State was and is the <b>only developed country</b> that does
+                not dictate any paid leave for new parents.</p>
+            </section>
+            <section class="step">
+              <h3>New mothers must rely on their employers</h3>
+              <p>As a result, many new mothers in the US must rely heavily on their employers to grant them paid maternity leave
+                and benefits.</p>
+              <p>This bubble chart visualizes <b>maternity leave in weeks</b> for <b>1,853</b> companies, educational
+                institutions, and nonprofits. The data was compiled by Fairygodboss, an online platform for sharing reviews about
+                companies by women, for women.</p>
+            </section>
+            <section class="step">
+              <p><b>Netflix</b> and the <b>Bill and Melinda Gates Foundation</b> offer the longest paid maternity leaves among
+                this subset,
+                at 52 weeks each.</p>
+            </section>
+            <section class="step">
+              <p>On the higher end of the spectrum, some companies offer <b>25</b> weeks of paid maternity leave or more.</p>
+            </section>
+            <section class="step">
+              <p>From the employers represented, around <b>0.9%</b> provide their employees with <b>25</b> weeks or more of paid
+                maternity leave.</p>
+            </section>
+            <section class="step">
+              <p>On the lower end of the spectrum, some companies allow less than <b>15</b> weeks of paid maternity leave, which
+                is less than Belgium's federal policy.</p>
+              <p>Several companies, i.e. <b>Princeton Review</b> and <b>TGI Fridays</b>, allow only 1 week of paid maternity
+                leave.</p>
+              <p>There are also several institutions, represented by 0's, that do not offer any paid maternity leave.</p>
+              <p><b>This is especially a problem for single working mothers.</b></p>
+            </section>
+            <section class="step">
+              <p>Approximately <b>85.2</b> percent offer <b>15</b> weeks or less of paid maternity leave.</p>
+            </section>
+            <section class="step">
+              <p>A majority (<b>60.3%</b>) fall in the 0-9 weeks range.</p>
+            </section>
+            <section class="step">
+              <p>The average maternity leave duration for reported employers is <b>8.2 weeks</b>, according to the dataset
+                provided
+                by Fairygodboss.</p>
+            </section>
+            <section class="step last-step">
+              <h3>Sources</h3>
+              <div><a href="https://fairygodboss.com/maternity-leave-resource-center">FairyGodBoss</a></div>
+              <div><a href="http://www.pewresearch.org/fact-tank/2016/09/26/u-s-lacks-mandated-paid-parental-leave/">Among 41
+                  nations, U.S. is the outlier when it comes to paid parental leave</a></div>
+              <div><a href="https://www.glassdoor.com/blog/best-parental-leave-policies/">Glassdoor: 15 Companies With The Best
+                  Parental Leave Policies</a></div>
+              <div><a href="https://data.guttmacher.org/regions">Guttmacher Institute Data Center</a></div>
+              <div><a href="https://iwpr.org/wp-content/uploads/wpallimport/files/iwpr-export/publications/B334-Paid%20Parental%20Leave%20in%20the%20United%20States.pdf">Paid
+                  Parental Leave in the United States: What the data tell
+                  us about access, usage, and economic and health benefits</a></div>
+              <div><a href="https://www.workingmother.com/sites/workingmother.com/files/attachments/2017/09/100best-chart-finalv3.pdf">Working
+                  Mothers 100 Best Companies 2017</a></div>
+              <div><a href="https://www.businessinsider.com/countries-with-best-parental-leave-2016-8">These 10 countries have
+                  the best parental leave policies in the world</a></div>
+              <br><br>
+              <div><p>This was featured as a favorite in the <a href="https://pudding.cool/process/pudding-awards-2018/">2018
+                Pudding Cup</a>, hosted by <a href="https://pudding.cool/">The Pudding</a>.</p></div>
+              <div><p>The full set of data can be found in the Maternity Leave Resource Center on <a href="https://fairygodboss.com/maternity-leave-resource-center">FairyGodBoss</a>.</p></div>
+              <div><p>Special thank you to Jim Valladingham for his <a href="http://vallandingham.me/scroller.html">scroll tutorial</a>,
+              and to Susie Lu for her <a href="http://d3-annotation.susielu.com/">d3-annotation</a> library.</p></div>
+              <div><p>More of my work <a href="http://mandilicai.com/">here</a>.</p></div>
+            </section>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="//unpkg.com/cross-fetch/dist/cross-fetch.js"></script>
   <script src="assets/d3.v5.min.js"></script>
   <script src="https://rawgit.com/susielu/d3-annotation/master/d3-annotation.min.js"></script>

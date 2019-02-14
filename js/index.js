@@ -342,7 +342,7 @@ function chartDisplay (data, industries, color) {
 
   d3.selectAll('.maternity-bubble').on('mousemove', function (d) {
     d3.select('#tooltip').style('display', 'initial')
-    d3.select('#tooltip').html('<div class="company">' + d.Company + '</div>' + 
+    d3.select('#tooltip').html('<div class="company">' + d.Company + '</div>' +
       '<div>' + d.MaternityLeave + ' weeks' + '</div>' +
       '<div>' + d.Industry + '</div>')
       .style('left', (d3.event.pageX) + 'px').style('top', (d3.event.pageY) + 'px')
