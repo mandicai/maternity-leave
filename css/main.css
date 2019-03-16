@@ -139,7 +139,7 @@ p {
 .annotation-note-title {
   fill: black;
   font-size: 19px;
-  font-weight: 'normal';
+  font-weight: normal;
 }
 
 .annotation-note-label {
