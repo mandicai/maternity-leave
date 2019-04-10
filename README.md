@@ -8,3 +8,12 @@ Data is from [Fairygodboss's Maternity Resource Center](https://fairygodboss.com
 The data is visualized using [d3.js](https://d3js.org/).
 
 Special thank you to Jim Valladingham for his [scroll tutorial](http://vallandingham.me/scroller.html), and to Susie Lu for her [d3-annotation](http://d3-annotation.susielu.com/) library.
+
+## Resources
+Making a bubble chart:
+- https://observablehq.com/@d3/bubble-chart
+- https://github.com/d3/d3-force
+- https://medium.com/@sxywu/understanding-the-force-ef1237017d5
+
+Building a web scraper with Python and Jupyter Notebook
+- https://docs.python-guide.org/scenarios/scrape/
