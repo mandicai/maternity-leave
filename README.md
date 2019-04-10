@@ -1,5 +1,7 @@
 # Maternity Leave in the US
 #### Demo: https://mandicai.github.io/maternity-leave/
+
+## Intro
 Currently, the United States is the only developed nation that has no federal policy for paid maternity leave. As a result, many new mothers in the US must rely heavily on their employers to grant them paid maternity leave and benefits. I was curious to know how many US employers granted their employees maternity leave, and to what extent compared to other countries that have federal policies mandating maternity leave.
 
 ## How it works
