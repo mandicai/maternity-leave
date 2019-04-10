@@ -9,6 +9,9 @@ The data is visualized using [d3.js](https://d3js.org/).
 
 Special thank you to Jim Valladingham for his [scroll tutorial](http://vallandingham.me/scroller.html), and to Susie Lu for her [d3-annotation](http://d3-annotation.susielu.com/) library.
 
+## Run it
+To run, `git clone` the repo, `cd` into the project, and run `http-server -c-1 -p 8000` (or any local server of your choice) to view the project at `localhost:8000`.
+
 ## Resources
 Making a bubble chart:
 - https://observablehq.com/@d3/bubble-chart
